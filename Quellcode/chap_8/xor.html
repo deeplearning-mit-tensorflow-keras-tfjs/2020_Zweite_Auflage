@@ -1,0 +1,73 @@
+<html>
+
+<head>
+  <!-- TensorFlow.js wird geladen -->
+  <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@1.0.0/dist/tf.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script>
+    $(document).ready(() => {
+
+
+      const input = tf.tensor([
+        [0, 0],
+        [0, 1],
+        [1, 0],
+        [1, 1]
+      ]);
+      const output = tf.tensor([
+        [0],
+        [1],
+        [1],
+        [0]
+      ]);
+
+      input.print()
+      output.print();
+
+      const xor_model = tf.sequential();
+      const optimizer = tf.train.sgd(0.01);
+
+      xor_model.add(
+        tf.layers.dense({
+          units: 1024,
+          inputShape: [2],
+          activation: "relu"
+        }));
+
+      xor_model.add(
+        tf.layers.dense({
+          units: 1,
+          activation: "relu"
+        }));
+
+
+      xor_model.compile({
+        optimizer,
+        loss: 'meanSquaredError'
+      });
+
+      xor_model.fit(input, output, {
+        epochs: 1000,
+        batchSize: 1,
+        verbose: 1
+      }).then(() => {
+
+        var res = xor_model.predict(tf.tensor([
+        [0, 0],
+        [0, 1],
+        [1, 0],
+        [1, 1]
+      ]))
+
+        console.log(res)
+        $("#result").text(res);
+      });
+    })
+  </script>
+</head>
+
+<body>
+  <div id="result"></div>
+</body>
+
+</html>

@@ -1,0 +1,101 @@
+body {
+  margin: 0;
+  font-family: 'Lato', sans-serif;
+  overflow: hidden;
+}
+
+#graphvisContainer {
+  min-height: 1000px;
+  height: 100%;
+}
+
+header {
+  background-color: black;
+  color: white;
+  height: 32px;
+  z-index: 10;
+  width: 100%;
+  padding: 10px;
+  border-bottom: white 1px solid;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+footer {
+  height: 150px;
+  border-top: #bbbbbb 1px solid;
+  background: white;
+  width: 100%;
+  padding: 5px;
+}
+
+#node_info {
+  margin: 5px;
+  overflow-y: scroll;
+  height: 60px;
+  font-size: 12px;
+  font-family: Courier New, Courier, monospace;
+}
+
+#main_container {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  align-content: flex-start;
+  height: calc(100% - 180px)
+}
+
+#model_visualization {
+  min-width: 400px;
+  max-width: 75%;
+  background-color: rgb(252, 251, 249);
+  padding: 10px;
+  border-right: 1px solid #bbbbbb;
+  overflow-y: scroll;
+}
+
+#learning_visualization {
+  width: 100%;
+  min-width: 50%;
+  padding: 10px;
+}
+
+.section_title {
+  padding: 10px;
+  font-size: 1.5em;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.main_title {
+  font-size: 1.5em;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.refresh {
+  border: 1px solid white;
+  font-size: 1.2em;
+  text-align: center;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  margin-right: 20px;
+}
+
+#modal_dialog {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.75);
+  align-items: center;
+}
+
+#modal_dialog_message {
+  margin: 0 auto;
+  width: 30%;
+  background: white;
+  padding: 10px;
+  font-size: 1.2em;
+}

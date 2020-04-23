@@ -1,0 +1,58 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,700");
+
+html,
+body {
+  height: 100%;
+  font-family: 'Montserrat', sans-serif;
+}
+
+#myVideo {
+  position: relative;
+}
+
+#mainContent {
+  width: 640px;
+  display: flex;
+  margin: 0 auto;
+  position: relative;
+}
+
+#myCanvas {
+  display: block;
+  width: 640px;
+  position: absolute;
+  z-index: 120;
+  border:1px solid transparent;
+}
+
+#loading {
+
+  margin: 10px;
+  margin: 0 auto;
+  display: flex;
+  width: 300px;
+}
+
+#output {
+  margin: 0 auto;
+  display: block;
+  width: 640px;
+  margin-top: 20px;
+}
+
+#firstLine {
+  width: 100%;
+  border-bottom: 1px solid grey;
+  margin-bottom: 5px;
+
+}
+.outputLine {
+  display: block;
+  width: 100%;
+  margin-bottom: 5px;
+}
+
+.outputLine .mini {
+  font-size: 12px;
+
+}

@@ -1,0 +1,23 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Object Detection mit YOLO</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://unpkg.com/ml5@0.1.1/dist/ml5.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="css/style.css"/>
+</head>
+
+<body>
+  <div id="mainContent">
+    <canvas id="myCanvas" width="640" height="320"></canvas>
+    <video width="640" height="360" controls id="myVideo" loop>
+      <source src="saarbruecken_city.mp4" type="video/mp4">
+    </video>
+  </div>
+  <div id="loading">Bitte warten: das YOLO Model wird geladen!</div>
+  <div id="output"></div>
+  </div>
+</body>
+<script src="js/object_detection.js"></script>
+</html>

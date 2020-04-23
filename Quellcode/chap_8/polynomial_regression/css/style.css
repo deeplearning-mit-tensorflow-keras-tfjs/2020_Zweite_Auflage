@@ -1,0 +1,23 @@
+.ct-series-b .ct-line,
+.ct-series-b .ct-point {
+    stroke: green;
+    stroke-width: 5px;
+    stroke-linecap: round;
+}
+
+.ct-series-a .ct-point {
+    stroke: red;
+    stroke-width: 5px;
+    stroke-linecap: square;
+}
+
+.ct-series-a .ct-line {}
+
+#stats {
+    background: black;
+    color: white;
+    width: min-content;
+    min-width: 180px;
+    padding: 10px;
+    height: 45px;
+}

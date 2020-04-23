@@ -1,0 +1,1104 @@
+attribute_id,attribute_name
+0,culture::abruzzi
+1,culture::achaemenid
+2,culture::aegean
+3,culture::afghan
+4,culture::after british
+5,culture::after german
+6,culture::after german original
+7,culture::after italian
+8,culture::after russian original
+9,culture::akkadian
+10,culture::alexandria-hadra
+11,culture::algerian
+12,culture::alsace
+13,culture::american
+14,culture::american or european
+15,culture::amsterdam
+16,culture::ansbach
+17,culture::antwerp
+18,culture::apulian
+19,culture::arabian
+20,culture::aragon
+21,culture::arica
+22,culture::asia minor
+23,culture::assyrian
+24,culture::atlantic watershed
+25,culture::attic
+26,culture::augsburg
+27,culture::augsburg decoration
+28,culture::augsburg original
+29,culture::austrian
+30,culture::avignon
+31,culture::avon
+32,culture::aztec
+33,culture::babylonian
+34,culture::babylonian or kassite
+35,culture::bactria-margiana archaeological complex
+36,culture::balinese
+37,culture::bavaria
+38,culture::bayreuth
+39,culture::beautiran
+40,culture::beauvais
+41,culture::belgian
+42,culture::berlin
+43,culture::birmingham
+44,culture::boeotian
+45,culture::bohemian
+46,culture::bologna
+47,culture::bordeaux
+48,culture::bow
+49,culture::brescia
+50,culture::bristol
+51,culture::british
+52,culture::british or french
+53,culture::british or scottish
+54,culture::brunswick
+55,culture::brussels
+56,culture::burma
+57,culture::burslem
+58,culture::byzantine
+59,culture::calima
+60,culture::cambodia
+61,culture::campanian
+62,culture::canaanite
+63,culture::canosan
+64,culture::castel durante
+65,culture::catalan
+66,culture::catalonia
+67,culture::caucasian
+68,culture::caughley
+69,culture::central asia
+70,culture::central european
+71,culture::central highlands
+72,culture::central italian
+73,culture::chalcidian
+74,culture::chantilly
+75,culture::chaumont-sur-loire
+76,culture::chelsea
+77,culture::chelsea-derby
+78,culture::chimu
+79,culture::china
+80,culture::chinese with dutch decoration
+81,culture::chinese with european decoration
+82,culture::chinese with french mounts
+83,culture::chiriqui
+84,culture::chorrera
+85,culture::chupicuaro
+86,culture::colima
+87,culture::colombian
+88,culture::colonial
+89,culture::colonial american
+90,culture::copenhagen
+91,culture::corinthian
+92,culture::coromandel coast
+93,culture::costa rica
+94,culture::costa rica or panama
+95,culture::cretan
+96,culture::crete
+97,culture::cyclades
+98,culture::cycladic
+99,culture::cypriot
+100,culture::cypriot or phoenician
+101,culture::czech
+102,culture::danish
+103,culture::deccan
+104,culture::dehua
+105,culture::delft
+106,culture::derby
+107,culture::deruta
+108,culture::devonshire
+109,culture::dresden
+110,culture::dublin
+111,culture::dutch
+112,culture::dyak
+113,culture::east greek
+114,culture::east greek/sardis
+115,culture::eastern european
+116,culture::eastern mediterranean
+117,culture::eastern mediterranean or italian
+118,culture::edinburgh
+119,culture::edomite
+120,culture::egypt
+121,culture::egyptian
+122,culture::elamite
+123,culture::england
+124,culture::etruria
+125,culture::etruscan
+126,culture::euboean
+127,culture::european
+128,culture::european bronze age
+129,culture::faliscan
+130,culture::ferrara
+131,culture::flemish
+132,culture::flemish or italian
+133,culture::florence
+134,culture::for american market
+135,culture::for british market
+136,culture::for continental market
+137,culture::for danish market
+138,culture::for european market
+139,culture::for french market
+140,culture::for iberian market
+141,culture::for portuguese market
+142,culture::for russian market
+143,culture::for swedish market
+144,culture::frankenthal
+145,culture::frankish
+146,culture::freiburg im breisgau
+147,culture::french
+148,culture::french or german
+149,culture::french or italian
+150,culture::french or swiss
+151,culture::fulda
+152,culture::furstenberg
+153,culture::gaul
+154,culture::geneva
+155,culture::genoa
+156,culture::german
+157,culture::german or swiss
+158,culture::ghassulian
+159,culture::gnathian
+160,culture::gonia
+161,culture::greek
+162,culture::greek islands
+163,culture::greek or roman
+164,culture::guanacaste-nicoya
+165,culture::gubbio
+166,culture::gurkha
+167,culture::haida
+168,culture::hanau
+169,culture::hattian
+170,culture::helladic
+171,culture::hilt
+172,culture::hittite
+173,culture::hochst
+174,culture::huastec
+175,culture::hungarian
+176,culture::hungary
+177,culture::huron
+178,culture::ica
+179,culture::inca
+180,culture::india
+181,culture::indian or nepalese
+182,culture::indonesia
+183,culture::inuit
+184,culture::iran
+185,culture::irish
+186,culture::isin-larsa
+187,culture::isin-larsaold babylonian
+188,culture::islamic
+189,culture::italian
+190,culture::italian or sicilian
+191,culture::italian or spanish
+192,culture::italic
+193,culture::italic-native
+194,culture::japan
+195,culture::javanese
+196,culture::jouy-en-josas
+197,culture::kathmandu valley
+198,culture::kazakhstan
+199,culture::kholmogory
+200,culture::kievan rus'
+201,culture::konigsberg
+202,culture::korea
+203,culture::la rochelle
+204,culture::laconian
+205,culture::lambayeque
+206,culture::lambeth
+207,culture::langobardic
+208,culture::leuven
+209,culture::lille
+210,culture::limoges
+211,culture::liverpool
+212,culture::london
+213,culture::london original
+214,culture::longton hall
+215,culture::lowestoft
+216,culture::ludwigsburg
+217,culture::lydian
+218,culture::lyons
+219,culture::macao
+220,culture::macaracas
+221,culture::macedonian
+222,culture::madrid
+223,culture::malayan
+224,culture::mali
+225,culture::manteno
+226,culture::maya
+227,culture::meissen
+228,culture::meissen with german
+229,culture::mennecy
+230,culture::mennecy or sceaux
+231,culture::mexican
+232,culture::mezcala
+233,culture::michoacan
+234,culture::milan
+235,culture::mimbres
+236,culture::minoan
+237,culture::mitanni
+238,culture::mixtec
+239,culture::moche
+240,culture::moche-wari
+241,culture::montelupo
+242,culture::moro
+243,culture::moroccan
+244,culture::moustiers
+245,culture::mughal
+246,culture::muisca
+247,culture::munich
+248,culture::mycenaean
+249,culture::nabataean
+250,culture::nailsea
+251,culture::nantes
+252,culture::naples
+253,culture::nasca
+254,culture::naxos
+255,culture::nayarit
+256,culture::neo-sumerian
+257,culture::neolithic
+258,culture::nepal
+259,culture::netherlandish
+260,culture::neuwied am rhein
+261,culture::nevers
+262,culture::nimes
+263,culture::north china
+264,culture::north indian
+265,culture::north italian
+266,culture::north netherlandish
+267,culture::northern european
+268,culture::northern india
+269,culture::northern italian
+270,culture::northwest china
+271,culture::northwest china/eastern central asia
+272,culture::norwegian
+273,culture::nuremberg
+274,culture::nymphenburg
+275,culture::old assyrian trading colony
+276,culture::olmec
+277,culture::orleans
+278,culture::ottonian
+279,culture::padua
+280,culture::pakistan
+281,culture::palermo
+282,culture::paracas
+283,culture::paris
+284,culture::parita
+285,culture::parthian
+286,culture::parthian or sasanian
+287,culture::peruvian
+288,culture::pesaro
+289,culture::philippine
+290,culture::phrygian
+291,culture::piedmont
+292,culture::polish
+293,culture::populonia
+294,culture::portuguese
+295,culture::potsdam
+296,culture::praenestine
+297,culture::proto-elamite
+298,culture::provincial
+299,culture::ptolemaic
+300,culture::qajar
+301,culture::quechua
+302,culture::remojadas
+303,culture::rhenish
+304,culture::roman
+305,culture::roman egyptian
+306,culture::rome
+307,culture::rouen
+308,culture::russian
+309,culture::saint-cloud
+310,culture::salinar
+311,culture::salzburg
+312,culture::san sabastian
+313,culture::sasanian
+314,culture::savoy
+315,culture::saxony
+316,culture::scandinavian
+317,culture::sceaux
+318,culture::scottish
+319,culture::scythian
+320,culture::seleucid
+321,culture::seville
+322,culture::sevres
+323,culture::sheffield
+324,culture::sicily
+325,culture::siena
+326,culture::silesia
+327,culture::sinceny
+328,culture::skyros
+329,culture::smyrna
+330,culture::south german
+331,culture::south italian
+332,culture::south netherlandish
+333,culture::southall
+334,culture::southern german
+335,culture::spanish
+336,culture::spitalfields
+337,culture::sri lankan
+338,culture::st. petersburg
+339,culture::staffordshire
+340,culture::stockholm
+341,culture::stoke-on-trent
+342,culture::strasbourg
+343,culture::sulawesi
+344,culture::sumatran
+345,culture::sumerian
+346,culture::surrey
+347,culture::swedish
+348,culture::swiss
+349,culture::syrian
+350,culture::tairona
+351,culture::tarentine
+352,culture::teano
+353,culture::teotihuacan
+354,culture::thailand
+355,culture::thanjavur
+356,culture::the hague
+357,culture::thessaly
+358,culture::thuringia
+359,culture::tibet
+360,culture::tibetan
+361,culture::tiwanaku
+362,culture::tlatilco
+363,culture::tlingit
+364,culture::tolita-tumaco
+365,culture::topara
+366,culture::tsimshian
+367,culture::turin
+368,culture::turkish
+369,culture::turkish or venice
+370,culture::ubaid
+371,culture::umbria
+372,culture::united states
+373,culture::unknown
+374,culture::urartian
+375,culture::urbino
+376,culture::urbino with gubbio luster
+377,culture::valencia
+378,culture::venice
+379,culture::veracruz
+380,culture::veraguas
+381,culture::verona
+382,culture::versailles
+383,culture::vienna
+384,culture::vietnam
+385,culture::villanovan
+386,culture::villeroy
+387,culture::vincennes
+388,culture::visigothic
+389,culture::vulci
+390,culture::wari
+391,culture::west slavic
+392,culture::western european
+393,culture::worcester
+394,culture::wurzburg
+395,culture::zenu
+396,culture::zoroastrian
+397,culture::zurich
+398,tag::abbies
+399,tag::abraham
+400,tag::abstraction
+401,tag::acanthus
+402,tag::acorns
+403,tag::acrobats
+404,tag::actors
+405,tag::actresses
+406,tag::adam
+407,tag::admirals
+408,tag::adonis
+409,tag::adoration of the magi
+410,tag::adoration of the sheperds
+411,tag::air transports
+412,tag::alexander the great
+413,tag::altars
+414,tag::amazons
+415,tag::amulets
+416,tag::amun
+417,tag::ancient greek
+418,tag::angels
+419,tag::anger
+420,tag::animals
+421,tag::anklet
+422,tag::annunciation
+423,tag::aphrodite
+424,tag::apocalypse
+425,tag::apollo
+426,tag::apostles
+427,tag::apples
+428,tag::arabic
+429,tag::archangel gabriel
+430,tag::arches
+431,tag::architects
+432,tag::architectural elements
+433,tag::architectural fragments
+434,tag::architecture
+435,tag::ariadne
+436,tag::armors
+437,tag::army
+438,tag::arrowheads
+439,tag::arrows
+440,tag::artemis
+441,tag::artists
+442,tag::assumption of the virgin
+443,tag::astronomy
+444,tag::athena
+445,tag::athletes
+446,tag::autumn
+447,tag::avalokiteshvara
+448,tag::axes
+449,tag::bacchus
+450,tag::badges
+451,tag::bagpipes
+452,tag::bakers
+453,tag::balconies
+454,tag::bamboo
+455,tag::baptism of christ
+456,tag::barns
+457,tag::baseball
+458,tag::basins
+459,tag::bathing
+460,tag::bathsheba
+461,tag::bats
+462,tag::battles
+463,tag::beaches
+464,tag::beads
+465,tag::beakers
+466,tag::bears
+467,tag::bedrooms
+468,tag::beds
+469,tag::bees
+470,tag::belts
+471,tag::benches
+472,tag::benjamin franklin
+473,tag::bes
+474,tag::bible
+475,tag::bicycles
+476,tag::billiards
+477,tag::birds
+478,tag::bishops
+479,tag::boars
+480,tag::boats
+481,tag::bobbins
+482,tag::bodhisattva
+483,tag::bodies of water
+484,tag::body parts
+485,tag::books
+486,tag::boots
+487,tag::bottles
+488,tag::bow and arrow
+489,tag::bowls
+490,tag::boxes
+491,tag::boxing
+492,tag::boys
+493,tag::bracelets
+494,tag::bridges
+495,tag::brooches
+496,tag::buckles
+497,tag::buddha
+498,tag::buddhism
+499,tag::buddhist religious figures
+500,tag::buffalos
+501,tag::buildings
+502,tag::buildings and structures
+503,tag::bulls
+504,tag::burial grounds
+505,tag::burials
+506,tag::butterflies
+507,tag::buttons
+508,tag::cabinets
+509,tag::calendars
+510,tag::camels
+511,tag::cameos
+512,tag::canals
+513,tag::candelabra
+514,tag::candles
+515,tag::candlesticks
+516,tag::cannons
+517,tag::capitals
+518,tag::carpets and rugs
+519,tag::carriages
+520,tag::cartouches
+521,tag::caryatids
+522,tag::castles
+523,tag::cathedrals
+524,tag::cats
+525,tag::cauldrons
+526,tag::caves
+527,tag::celestial bodies
+528,tag::censers
+529,tag::centaurs
+530,tag::ceremony
+531,tag::ceres
+532,tag::chairs
+533,tag::chalices
+534,tag::chariots
+535,tag::chess
+536,tag::chests
+537,tag::chickens
+538,tag::children
+539,tag::chinese
+540,tag::chinoiserie
+541,tag::christ
+542,tag::christian imagery
+543,tag::christianity
+544,tag::christmas
+545,tag::churches
+546,tag::circles
+547,tag::circus
+548,tag::cities
+549,tag::civil war
+550,tag::cleopatra
+551,tag::clocks
+552,tag::clothing and accessories
+553,tag::clouds
+554,tag::coat of arms
+555,tag::coats
+556,tag::coffeepots
+557,tag::coffins
+558,tag::coins
+559,tag::columns
+560,tag::commodes
+561,tag::concerts
+562,tag::contemplation
+563,tag::coptic
+564,tag::cornucopia
+565,tag::corpses
+566,tag::correspondence
+567,tag::corsets
+568,tag::costumes
+569,tag::couches
+570,tag::couples
+571,tag::courtyards
+572,tag::coverlets and quilts
+573,tag::cows
+574,tag::crabs
+575,tag::cradles
+576,tag::cranes
+577,tag::crescents
+578,tag::crocodiles
+579,tag::cross
+580,tag::crowd
+581,tag::crucifixion
+582,tag::cuneiform
+583,tag::cupid
+584,tag::cups
+585,tag::curtains
+586,tag::cutlery
+587,tag::daggers
+588,tag::daily life
+589,tag::daisies
+590,tag::dance
+591,tag::dancers
+592,tag::dancing
+593,tag::david
+594,tag::dawn
+595,tag::death
+596,tag::decorative designs
+597,tag::decorative elements
+598,tag::deer
+599,tag::deities
+600,tag::demons
+601,tag::descent from the cross
+602,tag::deserts
+603,tag::design elements
+604,tag::desks
+605,tag::devil
+606,tag::diadems
+607,tag::diamonds
+608,tag::diana
+609,tag::dice
+610,tag::dining
+611,tag::dionysus
+612,tag::dishes
+613,tag::docks
+614,tag::doctors
+615,tag::documents
+616,tag::dogs
+617,tag::dolls
+618,tag::dolphins
+619,tag::domes
+620,tag::donkeys
+621,tag::doors
+622,tag::doorways
+623,tag::doves
+624,tag::dragons
+625,tag::drawing
+626,tag::dresses
+627,tag::drinking
+628,tag::drinking glasses
+629,tag::drums
+630,tag::drunkenness
+631,tag::ducks
+632,tag::durga
+633,tag::eagles
+634,tag::earrings
+635,tag::easter
+636,tag::egg and dart
+637,tag::elephants
+638,tag::emblems
+639,tag::embroidery
+640,tag::emperor augustus
+641,tag::entombment
+642,tag::eros
+643,tag::esther
+644,tag::europa
+645,tag::eve
+646,tag::evening
+647,tag::ewers
+648,tag::eyes
+649,tag::facades
+650,tag::faces
+651,tag::factories
+652,tag::fairies
+653,tag::falcons
+654,tag::family
+655,tag::fans
+656,tag::farmers
+657,tag::farms
+658,tag::fathers
+659,tag::fauns
+660,tag::fear
+661,tag::feathers
+662,tag::feet
+663,tag::female nudes
+664,tag::fire
+665,tag::firearms
+666,tag::fireplaces
+667,tag::fireworks
+668,tag::fish
+669,tag::fishing
+670,tag::flags
+671,tag::flowers
+672,tag::flutes
+673,tag::fluting
+674,tag::food
+675,tag::footwear
+676,tag::forests
+677,tag::fortification
+678,tag::fountains
+679,tag::foxes
+680,tag::friezes
+681,tag::frogs
+682,tag::fruit
+683,tag::funerals
+684,tag::funerary objects
+685,tag::furniture
+686,tag::gadrooning
+687,tag::galatea
+688,tag::games
+689,tag::gardeners
+690,tag::gardens
+691,tag::garlands
+692,tag::gates
+693,tag::generals
+694,tag::genre scene
+695,tag::geometric patterns
+696,tag::george washington
+697,tag::gingham pattern
+698,tag::girls
+699,tag::globes
+700,tag::gloves
+701,tag::goats
+702,tag::goblets
+703,tag::goddess
+704,tag::gods
+705,tag::grapes
+706,tag::greek deities
+707,tag::greek figures
+708,tag::griffins
+709,tag::grotesques
+710,tag::guitars
+711,tag::hair
+712,tag::hammers
+713,tag::hands
+714,tag::harps
+715,tag::hathor
+716,tag::hats
+717,tag::hawks
+718,tag::heads
+719,tag::hell
+720,tag::helmets
+721,tag::hercules
+722,tag::hermes
+723,tag::hexagons
+724,tag::hieroglyphs
+725,tag::hills
+726,tag::hilts
+727,tag::hindu religious figures
+728,tag::hinduism
+729,tag::historical figures
+730,tag::holofernes
+731,tag::holy family
+732,tag::horns
+733,tag::horse riding
+734,tag::horses
+735,tag::horus
+736,tag::hospitals
+737,tag::houses
+738,tag::human figures
+739,tag::hunting
+740,tag::illness
+741,tag::incense burners
+742,tag::infants
+743,tag::inns
+744,tag::inscriptions
+745,tag::insects
+746,tag::insignia
+747,tag::interiors
+748,tag::isis
+749,tag::jackets
+750,tag::jainism
+751,tag::jars
+752,tag::jason
+753,tag::jesus
+754,tag::jewelry
+755,tag::jockeys
+756,tag::journals
+757,tag::judith
+758,tag::jugs
+759,tag::julius caesar
+760,tag::juno
+761,tag::jupiter
+762,tag::kettles
+763,tag::keys
+764,tag::kings
+765,tag::kitchens
+766,tag::knives
+767,tag::krishna
+768,tag::lace
+769,tag::ladders
+770,tag::ladles
+771,tag::lakes
+772,tag::lambs
+773,tag::lamentation
+774,tag::lamps
+775,tag::landforms
+776,tag::landscapes
+777,tag::last judgement
+778,tag::last supper
+779,tag::law
+780,tag::leaves
+781,tag::leda
+782,tag::leopards
+783,tag::lighting
+784,tag::lions
+785,tag::literature
+786,tag::liturgical objects
+787,tag::living rooms
+788,tag::lizards
+789,tag::lobsters
+790,tag::lockets
+791,tag::lotuses
+792,tag::louis xiv
+793,tag::love
+794,tag::lovers
+795,tag::lutes
+796,tag::madonna and child
+797,tag::maenads
+798,tag::magicians
+799,tag::maitreya
+800,tag::male nudes
+801,tag::mandolins
+802,tag::manjushri
+803,tag::manuscripts
+804,tag::maps
+805,tag::mark antony
+806,tag::markets
+807,tag::mars
+808,tag::mary magdalene
+809,tag::masks
+810,tag::massacres
+811,tag::medallions
+812,tag::medea
+813,tag::men
+814,tag::merchants
+815,tag::mercury
+816,tag::mice
+817,tag::military
+818,tag::military clothing
+819,tag::military equipment
+820,tag::minerva
+821,tag::mirrors
+822,tag::monkeys
+823,tag::monks
+824,tag::monsters
+825,tag::monuments
+826,tag::moon
+827,tag::moses
+828,tag::mosques
+829,tag::mothers
+830,tag::mountains
+831,tag::muses
+832,tag::music
+833,tag::musical instruments
+834,tag::musicians
+835,tag::mythical creatures
+836,tag::mythology
+837,tag::napoleon i
+838,tag::nativity
+839,tag::navy
+840,tag::necklaces
+841,tag::necktie
+842,tag::neptune
+843,tag::nero
+844,tag::netsuke
+845,tag::new testament
+846,tag::night
+847,tag::nike
+848,tag::nonrepresentational art
+849,tag::nymphs
+850,tag::obelisks
+851,tag::occupations
+852,tag::octagons
+853,tag::octopus
+854,tag::old testament
+855,tag::olive trees
+856,tag::opera
+857,tag::organs
+858,tag::ornament
+859,tag::orpheus
+860,tag::owls
+861,tag::painting
+862,tag::paisley
+863,tag::palaces
+864,tag::palmettes
+865,tag::pants
+866,tag::parks
+867,tag::parrots
+868,tag::party
+869,tag::peaches
+870,tag::peacocks
+871,tag::pediments
+872,tag::pendants
+873,tag::pentecost
+874,tag::peonies
+875,tag::percussion instruments
+876,tag::performance
+877,tag::perseus
+878,tag::pheasants
+879,tag::pianos
+880,tag::pigeons
+881,tag::pigs
+882,tag::pilasters
+883,tag::pinecones
+884,tag::pins
+885,tag::pitchers
+886,tag::plants
+887,tag::playing
+888,tag::playing cards
+889,tag::pocket watches
+890,tag::poetry
+891,tag::poets
+892,tag::polka-dot pattern
+893,tag::pomegranates
+894,tag::ponds
+895,tag::popes
+896,tag::portraits
+897,tag::poseidon
+898,tag::princes
+899,tag::princesses
+900,tag::prisms
+901,tag::prisoners
+902,tag::prisons
+903,tag::profiles
+904,tag::prostitutes
+905,tag::psyche
+906,tag::punishment
+907,tag::purses
+908,tag::putti
+909,tag::pyramids
+910,tag::queens
+911,tag::qur'an
+912,tag::rabbits
+913,tag::railways
+914,tag::rain
+915,tag::rams
+916,tag::reading
+917,tag::rectangles
+918,tag::religious events
+919,tag::religious texts
+920,tag::reliquaries
+921,tag::riding
+922,tag::rings
+923,tag::rivers
+924,tag::roads
+925,tag::robes
+926,tag::roman deities
+927,tag::roosters
+928,tag::rosaries
+929,tag::roses
+930,tag::rowing
+931,tag::ruins
+932,tag::sadness
+933,tag::sailors
+934,tag::saint anne
+935,tag::saint anthony
+936,tag::saint catherine
+937,tag::saint francis
+938,tag::saint george
+939,tag::saint jerome
+940,tag::saint john the baptist
+941,tag::saint john the evangelist
+942,tag::saint joseph
+943,tag::saint lawrence
+944,tag::saint mark
+945,tag::saint matthew
+946,tag::saint michael
+947,tag::saint paul
+948,tag::saint peter
+949,tag::saints
+950,tag::samples
+951,tag::sarcophagus
+952,tag::satire
+953,tag::satyrs
+954,tag::saucers
+955,tag::scarabs
+956,tag::scarves
+957,tag::schools
+958,tag::scorpions
+959,tag::screens
+960,tag::scrolls
+961,tag::sculpture
+962,tag::seals
+963,tag::seas
+964,tag::seascapes
+965,tag::seating furniture
+966,tag::self-portraits
+967,tag::serpents
+968,tag::servants
+969,tag::shakespeare
+970,tag::shakyamuni
+971,tag::sheep
+972,tag::shells
+973,tag::shepherds
+974,tag::shields
+975,tag::ships
+976,tag::shirts
+977,tag::shiva
+978,tag::shoes
+979,tag::sibyl
+980,tag::silenus
+981,tag::singers
+982,tag::singing
+983,tag::skeletons
+984,tag::skirts
+985,tag::skulls
+986,tag::sky
+987,tag::slavery
+988,tag::sleep
+989,tag::smoking
+990,tag::snails
+991,tag::snakes
+992,tag::snow
+993,tag::soldiers
+994,tag::spears
+995,tag::spectators
+996,tag::sphinx
+997,tag::sports
+998,tag::spring
+999,tag::squares
+1000,tag::squirrels
+1001,tag::stairs
+1002,tag::stars
+1003,tag::still life
+1004,tag::stools
+1005,tag::storage furniture
+1006,tag::storms
+1007,tag::strapwork
+1008,tag::street scene
+1009,tag::streets
+1010,tag::stripes
+1011,tag::students
+1012,tag::suffering
+1013,tag::suits
+1014,tag::summer
+1015,tag::sun
+1016,tag::sundials
+1017,tag::sunflowers
+1018,tag::swans
+1019,tag::sword guards
+1020,tag::swords
+1021,tag::tabernacles
+1022,tag::tables
+1023,tag::tablets
+1024,tag::taoism
+1025,tag::tapestries
+1026,tag::taweret
+1027,tag::tea caddy
+1028,tag::tea drinking
+1029,tag::teachers
+1030,tag::teapots
+1031,tag::telescopes
+1032,tag::temples
+1033,tag::tents
+1034,tag::textile fragments
+1035,tag::textiles
+1036,tag::theatre
+1037,tag::tigers
+1038,tag::tombs
+1039,tag::tools and equipment
+1040,tag::towers
+1041,tag::towns
+1042,tag::toys
+1043,tag::trains
+1044,tag::transportation
+1045,tag::trays
+1046,tag::trees
+1047,tag::triangles
+1048,tag::tricorns
+1049,tag::triton
+1050,tag::trophies
+1051,tag::trumpets
+1052,tag::tulips
+1053,tag::tunics
+1054,tag::tureens
+1055,tag::turtles
+1056,tag::undergarment
+1057,tag::uniforms
+1058,tag::urns
+1059,tag::utilitarian objects
+1060,tag::vajrapani
+1061,tag::vase fragments
+1062,tag::vases
+1063,tag::vegetables
+1064,tag::venus
+1065,tag::vestments
+1066,tag::vests
+1067,tag::victory
+1068,tag::villages
+1069,tag::vines
+1070,tag::violas
+1071,tag::violins
+1072,tag::virgin mary
+1073,tag::vishnu
+1074,tag::volcanoes
+1075,tag::vulcan
+1076,tag::wagons
+1077,tag::walking
+1078,tag::wars
+1079,tag::washing
+1080,tag::watches
+1081,tag::waterfalls
+1082,tag::watermills
+1083,tag::waves
+1084,tag::weapons
+1085,tag::weights and measures
+1086,tag::wells
+1087,tag::wind
+1088,tag::windmills
+1089,tag::windows
+1090,tag::wine
+1091,tag::winter
+1092,tag::women
+1093,tag::working
+1094,tag::world war i
+1095,tag::worshiping
+1096,tag::wreaths
+1097,tag::writing
+1098,tag::writing implements
+1099,tag::writing systems
+1100,tag::zeus
+1101,tag::zigzag pattern
+1102,tag::zodiac

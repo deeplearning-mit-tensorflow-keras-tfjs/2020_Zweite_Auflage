@@ -1,0 +1,55 @@
+<html>
+
+<body>
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!--  TensorFlow.js -->
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@1.0.0/dist/tf.min.js"></script>
+    
+    <!-- Posenet Modell wird geladen -->
+    <script src="https://unpkg.com/@tensorflow-models/posenet"></script>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <div id="title">
+        <h1>PoseNet mit Tensorflow.js</h1>
+    </div>
+    <div id="output_box">
+
+        <video id="video" height="480" width="640" controls="controls" controls="true" loop autoplay>
+            <source src="video/ballet.mp4" type="video/mp4">
+        </video>
+        <canvas id="pose_overlay_canvas" height="480" width="640">
+        </canvas>
+    </div>
+
+    <div id="settings">
+        <fieldset>
+            <legend>Video</legend>
+            <label>Video-Datei: </label>
+            <input type="file" id="videoFile" accept="video/mp4" />
+        </fieldset>
+        <fieldset>
+            <legend>Einstellungen</legend>
+            <label>Erkennungsmodus:
+                <select id="poseModeSelect">
+                    <option value="singlePose">Single Pose</option>
+                    <option value="multiPose">Multiple poses</option>
+                </select>
+            </label>
+            <label>
+                <input type="checkbox" id="showSkeleton" /> Skelett anzeigen</label>
+            <label>
+                <input type="checkbox" id="showPartNames" /> Name der Körperteile</label>
+            <label>Konfidenzwert
+                <input type="range" id="confidenceValueInput" min="0.1" max="1" step="0.1" value="0.5">
+                <span id="confidenceValueText"></span>
+            </label>
+        </fieldset>
+    </div>
+
+</body>
+
+<script src="js/script.js"></script>
+
+</html>

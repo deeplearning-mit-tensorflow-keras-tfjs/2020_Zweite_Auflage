@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css?family=Do+Hyeon');
+
+body {
+    background: deepskyblue;
+    font-family: 'Do Hyeon', sans-serif;
+}
+
+#message {
+    color: black;
+    font-size: 1.5em;
+    border-color: deepskyblue;
+    border-radius: 15px;
+    padding: 10px;
+    font-family: 'Do Hyeon', sans-serif;
+}
+
+#emoji {
+    font-size: 5em;
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+    transform: all;
+}
+
+#result {
+    font-size: 1.5em;
+    color: white;
+}

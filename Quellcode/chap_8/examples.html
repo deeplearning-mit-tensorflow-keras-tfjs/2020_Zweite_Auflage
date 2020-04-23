@@ -1,0 +1,363 @@
+<html>
+
+<head>
+  <!-- TensorFlow.js wird geladen -->
+  <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@1.0.0/dist/tf.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/5.0.1/math.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+  <style>
+
+    
+@import url('https://fonts.googleapis.com/css?family=PT+Sans');
+
+body {
+    font-family: 'PT Sans', sans-serif;
+    padding: 25px;
+}
+    .beispiel {
+
+      border-bottom: 1px grey solid;
+      padding: 10px;
+    }
+  </style>
+  <title>Beispiele mit TensorFlow.js</title>
+</head>
+<script>
+  $(document).ready(() => {
+
+    /** Beispiele für Tensor-Ops*/
+    function basic_operations() {
+      console.log("basic_operations()")
+      const shape = [4, 3]; // 4 Zeilen, 3 Spalten
+      const a = tf.tensor([0, 1.0, 2.0, 3.0, 4, 5, 6, 7, 8, 9, 10, 11], shape);
+      a.print(true);
+
+      var firstTensor = tf.tensor1d([1, 2, 3, 4, 5, 6, 7]);
+      var secondTensor = tf.tensor([1, 2, 3, 4, 5, 6, 7]);
+
+      console.log(firstTensor === secondTensor)
+
+      firstTensor.equal(secondTensor).print()
+
+      tf.tensor2d([
+        [1, 2],
+        [3, 4]
+      ]).print();
+      tf.tensor3d([
+        [
+          [1, 2],
+          [3, 4],
+          [4, 5]
+        ],
+        [
+          [6, 7],
+          [8, 9],
+          [10, 11]
+        ]
+      ]).print();
+
+      tf.tensor3d([
+        [
+          [1, 2],
+          [3, 4],
+          [4, 5]
+        ],
+        [
+          [6, 7],
+          [8, 9],
+          [10, 11]
+        ]
+      ]).print()
+
+
+      const myTensor = tf.tensor([1, 2, 3, 4]);
+
+      // Geht bis TensorFlow 0.15:
+      // console.log(myTensor.get(0))
+
+      // Ab TensorFlow 0.15:
+      //console.log(myTensor.bufferSync().get(0))
+
+      const myArray = myTensor.dataSync()
+      console.log(myArray[0])
+
+      const scalarValue = tf.scalar(10);
+      const rank0Tensor = tf.tensor(10);
+
+      scalarValue.print(true);
+      rank0Tensor.print(true);
+
+      const zeros = tf.zeros([2, 7]);
+      zeros.print()
+
+      const ones = tf.ones([2, 7]);
+      ones.print()
+
+      const x = tf.tensor1d([1, 2, 3, 4]);
+      x.reshape([2, 2]).print();
+
+    }
+
+    /** Mathematische Operationen*/
+    function basic_arithmetic_operations() {
+      console.log("basic_arithmetic_operations()")
+
+      // Add 
+      const a = tf.tensor1d([3, 4, 5, 6]);
+      const b = tf.tensor1d([7, 6, 5, 4]);
+
+      a.add(b).print(); //  [10, 10, 10, 10]
+
+      // Add mit Tensor 2D
+      const c = tf.tensor2d([
+        [3, 4],
+        [5, 6]
+      ]);
+      const d = tf.tensor2d([
+        [1, 1],
+        [1, 1]
+      ]);
+      c.add(d).print();
+
+      // Mittelwert
+      tf.mean(tf.tensor2d([
+        [3, 4],
+        [5, 6]
+      ])).print()
+
+      // Wurzel
+      tf.sqrt(tf.tensor2d([
+        [1, 9],
+        [16, 1024]
+      ])).print()
+    }
+
+
+    /** Anlegen eines einfachen Modells */
+    function createAndTrainModel() {
+
+      const data = tf.tensor([1, 2, 3, 4, 5])
+      const labels = tf.tensor([1, 4, 6, 8, 10])
+      const model = tf.sequential();
+
+      model.add(
+        tf.layers.dense({
+          units: 1,
+          inputShape: [1]
+        })
+      );
+
+
+      const optimizer = tf.train.sgd(0.01);
+      model.compile({
+        optimizer,
+        loss: 'meanSquaredError'
+      });
+      model.summary()
+      model.fit(data, labels, {
+        epochs: 200
+      }).then(() => {
+
+        model.predict(tf.tensor2d([
+          [10]
+        ])).print(true)
+
+      });
+
+
+    }
+
+    /* Laden eines Bilds als Tensor */
+    function tfFromPixelTest() {
+
+      const bild = document.getElementById("mein_bild");
+
+      // Ab TensorFlow.js 1.0.0 ist tf.fromPixels deprecated. 
+      // const img = tf.fromPixels(bild).toFloat();
+      // Ab der Version 1.0.0 muss die Funktion tf.browser.fromPixels() benutzt werden
+      const img = tf.browser.fromPixels(bild).toFloat();
+      img.print(true)
+      console.log(img.shape)
+
+    }
+
+    /* Benutzung von dispose() */
+    function disposeOperation() {
+      console.log(tf.memory().numTensors)
+      const myTensor = tf.tensor([1, 2, 3, 4]);
+      console.log(tf.memory().numTensors)
+      myTensor.dispose()
+      console.log(tf.memory().numTensors)
+    }
+
+    /** Benutzung von tf.tidy() */
+    function tidyOperation() {
+
+      function addTensor() {
+        const myFirstTensor = tf.tensor([1, 2, 3, 4]);
+        const mySecondTensor = tf.tensor([4, 3, 2, 1]);
+        console.log("1) Anzahl der Tensoren: " + tf.memory().numTensors)
+        console.log("1) Allokierte Bytes im Speicher: " + tf.memory().numBytes)
+        return myFirstTensor.add(mySecondTensor)
+      }
+
+      console.log("0) Anzahl der Tensoren: " + tf.memory().numTensors)
+      console.log("0) Allokierte Bytes im Speicher: " + tf.memory().numBytes)
+
+
+      const resultTensor = tf.tidy(addTensor);
+      resultTensor.print()
+      console.log("2) Anzahl der Tensoren (ausserhalb von tidy): " + tf.memory().numTensors)
+      console.log("2) Allokierte Bytes im Speicher: " + tf.memory().numBytes)
+
+    }
+
+    /** Funktion zum speichern und Laden von Modellen */
+    async function saveAndLoadModel() {
+
+      console.log("Gespeicherte Modelle:\n")
+      console.log(Object.keys(await tf.io.listModels()).length)
+
+      // Zwei Modelle werden angelegt
+      const firstModel = tf.sequential();
+      firstModel.add(
+        tf.layers.dense({
+          units: 1,
+          inputShape: [1]
+        })
+      );
+
+      await firstModel.save('localstorage://first-model');
+      await firstModel.save("downloads://first-model")
+
+      const secondModel = tf.sequential();
+      secondModel.add(
+        tf.layers.dense({
+          units: 5,
+          inputShape: [40]
+        })
+      );
+
+      await secondModel.save('localstorage://second-model');
+
+      console.log("Gespeicherte Modelle:\n")
+      console.log(Object.keys(await tf.io.listModels()).length)
+      console.log("Liste der Modelle:\n")
+      var modelList = await tf.io.listModels();
+
+      // Inhalt der Modelle-Liste anzeigen 
+      Object.keys(modelList).forEach((element) => {
+        console.log(modelList[element]);
+      });
+    }
+
+    async function loadModelFromFile()
+    {
+      const jsonFile = document.getElementById('json-upload').files[0];
+      const weightsFile = document.getElementById('weights-upload').files[0]
+      const model = await tf.loadLayersModel(tf.io.browserFiles([jsonFile,weightsFile]));
+      model.summary()
+    }
+
+
+    // Start der Beispiele
+    const scalarValue = tf.scalar(10);
+    const rank0Tensor = tf.tensor(10);
+
+    scalarValue.print(true);
+    rank0Tensor.print(true);
+    // console.log(rank0Tensor)
+
+    var sample_functions = [
+
+      basic_operations,
+      basic_arithmetic_operations,
+      createAndTrainModel,
+      saveAndLoadModel,
+      loadModelFromFile,
+      tidyOperation,
+      disposeOperation,
+      tfFromPixelTest
+    ]
+  
+    $("button").click(function () {
+     
+      var index = $(this).attr("data-id");
+      console.log("=== Aufruf von: " + sample_functions[index].name + "() ===")
+      sample_functions[index]()
+
+    });
+
+  })
+</script>
+
+<body>
+
+  <h1>Beispiele mit TensorFlow.js</h1>
+  <div>Auf dieser Seite werden Sie ein paar Grundfunktionalitäten von TensorFlow.js innerhalb des Webbrowsers testen können.
+  Damit Sie die Ausgaben der Funktionen sichten können, vergessen Sie nicht die Konsole (Entwicklertools) Ihres
+  Webbrowsers zu aktivieren.
+  Viel Spaß!
+  </div>
+  <div class="beispiel">
+    <h2>Operationen mit Tensoren</h2>
+    <button data-id="0">basic_operations()</button>
+  </div>
+  <div class="beispiel">
+    <h2>Arithmetische Operationen</h2>
+    <button data-id="1" type="button">basic_arithmetic_operations()</button>
+  </div>
+  <div class="beispiel">
+    <h2>Generierung und Training eines Modells</h2>
+    <button data-id="2" type="button">createAndTrainModel()</button>
+  </div>
+
+  <div class="beispiel">
+    <h2>Modell speichern ...</h2>
+    <button data-id="3" type="button">saveAndLoadModel()</button>
+  </div>
+
+
+  <div class="beispiel">
+    <h2>... und laden</h2>
+    <div>Das Modell wurde im Vorfeld mit <pre>await firstModel.save("downloads://my-model")</pre> gespeichert </div>
+  </br>
+    <div>Laden der Modell-Dateien:</div>
+  </br>
+    <div id="">
+      <label for="json-upload">JSON-Datei für das Modell:</label>
+      <input id="json-upload" name="json-upload" type="file" label="JSON-Datei" />
+    </br>
+      <label for="weights-upload">Weights-Datei für das Modell:</label>
+      <input id="weights-upload" name="weights-upload" type="file" />
+    </div>
+
+    <button data-id="4" type="button">loadModelFromFile</button>
+  </div>
+
+
+  <div class="beispiel">
+    <h2>Tidy-Operationen</h2>
+    <button data-id="5" type="button">tidyOperation()</button>
+  </div>
+
+
+  <div class="beispiel">
+    <h2>Benutzung von dispose() </h2>
+    <button data-id="6" type="button">disposeOperation()</button>
+  </div>
+
+  <div class="beispiel">
+    <h2>Benutzung von tf.browser.fromPixels() mit Bild </h2>
+
+    <!-- Wenn das Größe des Bildes noch unbekannt ist, können die 
+    Attribute width oder height auf "auto" gesetzt werden -->
+    <img id="mein_bild" crossorigin="anonymous" height="250px" width="500px"
+      src="https://upload.wikimedia.org/wikipedia/commons/2/2b/Nico_Rosberg_2015_Malaysia_FP2_1.jpg" />
+  </br>
+    <button data-id="7" type="button">tfFromPixelTest()</button>
+  </div>
+
+</body>
+</html>

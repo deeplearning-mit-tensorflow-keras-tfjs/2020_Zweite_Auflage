@@ -1,0 +1,32 @@
+
+@import url('https://fonts.googleapis.com/css?family=PT+Sans');
+
+body {
+    font-family: 'PT Sans', sans-serif;
+    padding: 25px;
+}
+
+#picture {
+    border: 1px thin grey;
+    width: 100%;
+}
+
+#bild_input {
+    width: 100%;
+}
+
+.inline {
+    display: inline-block;
+    font-weight: bold;
+    font-style: italic;
+}
+
+#modelRecognized {
+    padding: 20px;
+    font-size: 1.2em;
+}
+
+#pictureInputURL {
+    width: 100%;
+    padding:5px;
+}

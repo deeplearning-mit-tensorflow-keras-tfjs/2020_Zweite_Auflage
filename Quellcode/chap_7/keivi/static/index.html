@@ -1,0 +1,52 @@
+<html>
+<head>
+  <link href="/css/c3.min.css" rel="stylesheet">
+  <link href="/css/style.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Lato|Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i" rel="stylesheet">
+  <script type="text/javascript" src="/js/jquery.min.js"></script>
+  <script type="text/javascript" src="/js/d3.min.js"></script>
+  <script type="text/javascript" src="/js/c3.min.js"></script>
+  <script type="text/javascript" src="/js/graph.js"></script>
+  <script type="text/javascript" src="/js/dagre.min.js"></script>
+  <script type="text/javascript" src="/js/cytoscape.js"></script>
+  <script type="text/javascript" src="/js/cytoscape-dagre.js"></script>
+  <title>Keivi - Visualisierung</title>
+</head>
+
+<header>
+  <div class="main_title">Keras - Visualisierung</div>
+  <div id="refresh_button" class="refresh">⟳</div>
+</header>
+
+<body>
+<!-- Dialogfenster -->
+<div id="modal_dialog">
+  <div id="modal_dialog_message">
+    Bitte warten Sie bis die erste Epoche durchgelaufen ist!
+  </div>
+</div>
+
+<!-- Hautpcontainer-->
+<div id="main_container">
+  <div id="model_visualization">
+    <div class="section_title">Keras Modell</div>
+    <div id='graphvisContainer' />
+  </div>
+</div>
+
+<div id="learning_visualization">
+  <div class="section_title">Lernvorgang</div>
+  <div id="visualization"></div>
+</div>
+</div>
+</div>
+
+<footer>
+  <div class="section_title">Node Infos</div>
+  <div id="node_info"></div>
+</footer>
+</body>
+
+<script type="text/javascript" src="js/script.js"></script>
+
+</html>

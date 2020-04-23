@@ -1,0 +1,31 @@
+<html>
+<head>
+    <title>MobileNet mit ml5.js</title>
+    <script src="https://unpkg.com/ml5@0.1.1/dist/ml5.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="css/style.css"/>
+</head>
+
+<body>
+    <h1>Klassifizierung mit MobileNet</h1>
+    <img src="" crossorigin="anonymous" id="picture" />
+    <div>
+        <div id="modelLoading">MobileNet Model wird geladen...</div>
+        <div id="modelRecognized">MobileNet erkennt im Bild:
+            <div id="result" class="inline">...</div> mit einer Konfidenz von:
+            <div id="probability" class="inline">...</div>
+        </div>
+        <div>
+            <div id="formBlock">
+                <label for="uname">Geben Sie bitte eine URL für das Bild an:</label>
+                </br>
+                <input type="text" id="pictureInputURL" name="bild" required minLength="4" maxLength="256" width="100%" value="https://upload.wikimedia.org/wikipedia/commons/2/2b/Nico_Rosberg_2015_Malaysia_FP2_1.jpg"
+                    placeholder="4 to 8 characters long" />
+                <input type="button" id="myButton" value="Analysieren!"></input>
+            </div>
+        </div>
+    </div>
+    </div>
+</body>
+<script src="js/script.js"></script>
+</html>

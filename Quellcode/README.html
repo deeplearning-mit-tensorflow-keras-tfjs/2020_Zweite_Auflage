@@ -1,0 +1,1075 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Readme - Deep Learning mit TensorFlow, Keras und TensorFlow.js</title>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
+    <style>
+        @charset "UTF-8";
+        body {
+            font-family: 'PT Sans', sans-serif;
+            margin-bottom: 100px;
+        }
+
+        code {
+            color: white;
+            background-color: black;
+        }
+
+        code {
+            padding: 2px 4px
+        }
+
+
+        pre {
+            display: block;
+            margin: 0 0 10px;
+            word-break: break-all;
+            word-wrap: break-word;
+            color: #333;
+            background-color: #f5f5f5;
+            border: 1px solid #ccc;
+            border-radius: 4px
+        }
+
+        pre code {
+            padding: 0;
+            font-size: inherit;
+            color: inherit;
+            white-space: pre-wrap;
+            background-color: transparent;
+            border-radius: 0
+        }
+
+        .pre-scrollable {
+            max-height: 340px;
+            overflow-y: scroll
+        }
+
+        table {
+            background-color: transparent
+        }
+
+        th {
+            text-align: left
+        }
+
+        .table {
+            width: 100%;
+            max-width: 100%;
+            margin-bottom: 20px
+        }
+
+        .table>thead>tr>th {
+            padding: 8px;
+            line-height: 1.4285714;
+            border-top: 1px solid #ddd
+        }
+       
+        .table>thead>tr>td,
+        .table>tbody>tr>th,
+        .table>tbody>tr>td,
+        .table>tfoot>tr>th,
+        .table>tfoot>tr>td {
+            padding: 8px;
+            line-height: 1.4285714;
+            vertical-align: top;
+            border-top: 1px solid #ddd
+        }
+
+        .table>thead>tr>th {
+            vertical-align: bottom;
+            border-bottom: 2px solid #ddd
+        }   
+
+
+        .table>thead>tr>th:nth-child(1) {
+            vertical-align: bottom;
+            border-bottom: 2px solid #ddd;
+            width: 50px;
+        }   
+
+        .table>thead>tr>th:nth-child(2) {
+            vertical-align: bottom;
+            border-bottom: 2px solid #ddd;
+          
+            width: 100px;
+        }   
+        .table>thead>tr>th:nth-child(3) {
+            vertical-align: bottom;
+            border-bottom: 2px solid #ddd;
+          
+            width: 300px;
+        }   
+        .table>thead>tr>th:nth-child(4) {
+            vertical-align: bottom;
+            border-bottom: 2px solid #ddd;
+           
+            
+        }   
+
+
+        tbody>tr:nth-child(odd)>td,
+        tbody>:nth-child(odd)>th {
+            background-color:#F2F4FC
+        }
+
+        .hljs {
+            display: block;
+            overflow-x: auto;
+            padding: .5em;
+            background: #002b36;
+            color: #839496;
+            -webkit-text-size-adjust: none
+        }
+
+        .hljs-comment,
+        .hljs-template_comment,
+        .diff .hljs-header,
+        .hljs-doctype,
+        .hljs-pi,
+        .lisp .hljs-string,
+        .hljs-javadoc {
+            color: #586e75
+        }
+
+        .hljs-keyword,
+        .hljs-winutils,
+        .method,
+        .hljs-addition,
+        .css .hljs-tag,
+        .hljs-request,
+        .hljs-status,
+        .nginx .hljs-title {
+            color: #859900
+        }
+
+        .hljs-number,
+        .hljs-command,
+        .hljs-string,
+        .hljs-tag .hljs-value,
+        .hljs-rules .hljs-value,
+        .hljs-phpdoc,
+        .hljs-dartdoc,
+        .tex .hljs-formula,
+        .hljs-regexp,
+        .hljs-hexcolor,
+        .hljs-link_url {
+            color: #2aa198
+        }
+
+        .hljs-title,
+        .hljs-localvars,
+        .hljs-chunk,
+        .hljs-decorator,
+        .hljs-built_in,
+        .hljs-identifier,
+        .vhdl .hljs-literal,
+        .hljs-id,
+        .css .hljs-function {
+            color: #268bd2
+        }
+
+        .hljs-attribute,
+        .hljs-variable,
+        .lisp .hljs-body,
+        .smalltalk .hljs-number,
+        .hljs-constant,
+        .hljs-class .hljs-title,
+        .hljs-parent,
+        .hljs-type,
+        .hljs-link_reference {
+            color: #b58900
+        }
+
+        .hljs-preprocessor,
+        .hljs-preprocessor .hljs-keyword,
+        .hljs-pragma,
+        .hljs-shebang,
+        .hljs-symbol,
+        .hljs-symbol .hljs-string,
+        .diff .hljs-change,
+        .hljs-special,
+        .hljs-attr_selector,
+        .hljs-subst,
+        .hljs-cdata,
+        .css .hljs-pseudo,
+        .hljs-header {
+            color: #cb4b16
+        }
+
+        .hljs-deletion,
+        .hljs-important {
+            color: #dc322f
+        }
+
+        .hljs-link_label {
+            color: #6c71c4
+        }
+
+        .tex .hljs-formula {
+            background: #073642
+        }
+
+        *,
+        *:before,
+        *:after {
+            box-sizing: border-box
+        }
+
+        html {
+            -ms-text-size-adjust: 100%;
+            -webkit-text-size-adjust: 100%;
+            margin-bottom: 100px;
+        }
+
+        article,
+        aside,
+        details,
+        figcaption,
+        figure,
+        footer,
+        header,
+        hgroup,
+        main,
+        nav,
+        section,
+        summary {
+            display: block
+        }
+
+       
+
+        [hidden],
+        template {
+            display: none
+        }
+
+        a {
+            background: 0 0
+        }
+
+        a:active,
+        a:hover {
+            outline: 0
+        }
+
+        abbr[title] {
+            border-bottom: 1px dotted
+        }
+
+        b,
+        strong {
+            font-weight: 700
+        }
+
+        dfn {
+            font-style: italic
+        }
+
+        h1 {
+            margin: .67em 0
+        }
+
+        mark {
+            background: #ff0;
+            color: #000
+        }
+
+        small {
+            font-size: 80%
+        }
+
+        images {
+            border: 0
+        }
+
+        svg:not(:root) {
+            overflow: hidden
+        }
+
+        figure {
+            margin: 1em 40px
+        }
+
+        hr {
+            box-sizing: content-box;
+            height: 0
+        }
+
+        pre {
+            overflow: auto
+        }
+
+        code,
+        kbd {
+            font-size: 0.8em
+        }
+
+        code,
+        kbd,
+        pre,
+        samp {
+            font-family: monospace, monospace
+        }
+
+
+
+        table {
+            border-collapse: collapse;
+            border-spacing: 0
+        }
+
+
+        html {
+            font-size: .875em;
+            background: #fff;
+            color: #373D49
+        }
+
+        html,
+        body {
+
+            height: 100%
+        }
+
+        body {
+            font-size: 1rem;
+            font-weight: 400;
+            line-height: 2rem
+        }
+
+        ul,
+        ol {
+            margin-bottom: .83999rem;
+            padding-top: .16001rem
+        }
+
+        li {
+            font-feature-settings: 'kern'1, 'onum'1, 'liga'1;
+            margin-left: 1rem
+        }
+
+        li>ul,
+        li>ol {
+            margin-bottom: 0
+        }
+
+        p {
+            padding-top: .66001rem;
+            font-feature-settings: 'kern'1, 'onum'1, 'liga'1;
+            margin-top: 0
+        }
+
+        p,
+        pre {
+            margin-bottom: 1.33999rem
+        }
+
+        pre {
+            font-size: 1rem;
+            padding: .66001rem 9.5px 9.5px;
+            line-height: 2rem;
+            background: linear-gradient(to bottom, #fff 0, #fff .75rem, #f5f7fa .75rem, #f5f7fa 2.75rem, #fff 2.75rem, #fff 4rem);
+            background-size: 100% 4rem;
+            border-color: #D3DAEA
+        }
+
+        blockquote {
+            margin: 0
+        }
+
+        blockquote p {
+            font-size: 1rem;
+            margin-bottom: .33999rem;
+            font-style: italic;
+            padding: .66001rem 1rem 1rem;
+            border-left: 3px solid #A0AABF
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+
+            font-style: normal;
+            font-weight: 600;
+            margin-top: 0
+        }
+
+        h1 {
+            line-height: 3rem;
+            font-size: 2.0571429rem;
+            margin-bottom: .21999rem;
+            padding-top: .78001rem
+        }
+
+        h2 {
+            font-size: 1.953125rem;
+            margin-bottom: .1835837rem;
+            padding-top: .8164163rem
+        }
+
+        h2,
+        h3 {
+            line-height: 3rem
+        }
+
+        h3 {
+            font-size: 1.6457143rem;
+            margin-bottom: .07599rem;
+            padding-top: .92401rem
+        }
+
+        h4 {
+            font-size: 1.5625rem;
+            margin-bottom: .546865rem;
+            padding-top: .453135rem
+        }
+
+        h5 {
+            font-size: 1.25rem;
+            margin-bottom: -.56251rem;
+            padding-top: .56251rem
+        }
+
+        h6 {
+            font-size: 1rem;
+            margin-bottom: -.65001rem;
+            padding-top: .65001rem
+        }
+
+        a {
+            cursor: pointer;
+            color: blue;
+            text-decoration: none;
+            display: block;
+        }
+
+        a:hover,
+        a:focus {
+            border-bottom-color: #35D7BB;
+            color: darkslateblue;
+
+        }
+
+        img {
+            height: auto;
+            max-width: 100%
+        }
+
+        dt {
+            font-style: italic;
+            font-weight: 600
+        }
+    
+
+        body {
+            max-width: 1024px;
+            margin: 0 auto;
+            overflow: auto;
+            padding: 2%
+        }
+
+        #book
+        {
+            height: 300px;
+            width: auto;
+            display: block;
+            align-self: center;
+            margin: auto;
+        }
+    </style>
+</head>
+
+<div><img
+        id="book" src="https://s3-eu-west-1.amazonaws.com/cover2.galileo-press.de/print/9783836274258_800.png" alt="Book"></p>
+        </div>
+<h1 class="code-line" data-line-start=0 data-line-end=1>📕Quellcode zum Buch </br> <i>Deep Learning mit TensorFlow,
+        Keras und TensorFlow.js</i></h1>
+
+<body id="preview">
+    <h2 class="code-line" data-line-start=4 data-line-end=5><a id="Kapitel_3_Neuronale_Netze_4"></a>Kapitel 3: Neuronale
+        Netze</h2>
+    <table width="100%" class="table">
+        <thead>
+            <tr>
+                <th>Abschnitt</th>
+                <th>Kurzbeschreibung</th>
+                <th>Dateipfad</th>
+                <th>Hinweise</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>3.4</td>
+                <td>Klassifikation von Iris-Blüten mit scikit learn</td>
+                <td><a href="chap_3/iris_classification.py">chap_3/iris_classification.py</a> <a
+                        href="chap_3/iris_classification.ipynb">chap_3/iris_classification.ipynb</a></td>
+                <td>Dataset: <a href="chap_3/iris.csv">iris.csv</a></td>
+            </tr>
+        </tbody>
+    </table>
+    <h2 class="code-line" data-line-start=10 data-line-end=11><a
+            id="Kapitel_4_Python_und_MachineLearningBibliotheken_10"></a>Kapitel 4: Python und
+        Machine-Learning-Bibliotheken</h2>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Abschnitt</th>
+                <th>Kurzbeschreibung</th>
+                <th>Dateipfad</th>
+                <th>Hinweise</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>4.5.1</td>
+                <td>Beispiele von Funktionalitäten von NumPy</td>
+                <td><a href="chap_4/numpy_examples.py">chap_4/numpy_examples.py</a> <a
+                        href="chap_4/numpy_examples.ipynb">chap_4/numpy_examples.ipynb</a></td>
+                <td>Installieren Sie die zwei Python-Packages </br><code>pip install tabulate wget</code>.</td>
+            </tr>
+            <tr>
+                <td>4.6.4</td>
+                <td>Visualisierung vom Olivetti-Dataset</td>
+                <td><a href="chap_4/olivetti_dataset.py">chap_4/olivetti_dataset.py</a> <a
+                        href="chap_4/olivetti_dataset.ipynb">chap_4/olivetti_dataset.ipynb</a></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>4.6.5</td>
+                <td>Normalisierung von Daten mit scikit-learn</td>
+                <td><a href="chap_4/normalize_iris_dataset.py">chap_4/normalize_iris_dataset.py</a> <a
+                        href="chap_4/normalize_iris_dataset.ipynb">chap_4/normalize_iris_dataset.ipynb</a></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>4.6.6</td>
+                <td>Benutzung von Seed</td>
+                <td><a href="chap_4/seed_example.py">chap_4/seed_example.py</a> <a
+                        href="chap_4/seed_example.ipynb">chap_4/seed_example.ipynb</a></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>4.7</td>
+                <td>Lineares Regressionsmodell mit scikit-learn</td>
+                <td><a href="chap_4/linear_regression.py">chap_4/linear_regression.py</a> <a
+                        href="chap_4/linear_regression.ipynb">chap_4/linear_regression.ipynb</a></td>
+                <td></td>
+            </tr>
+        </tbody>
+    </table>
+    <h2 class="code-line" data-line-start=20 data-line-end=21><a id="Kapitel_5_TensorFlow_20"></a>Kapitel 5: TensorFlow
+    </h2>
+    <p class="has-line-data" data-line-start="22" data-line-end="23">☝ Tipp: Möchten Sie weniger Debugging-Ausgaben von
+        TensorFlow erhalten, können Sie den Debug-Level mit folgenden Python-Zeilen verändern:</p>
+    <pre><code class="has-line-data" data-line-start="25" data-line-end="28" class="language-python"><span class="hljs-keyword">import</span> os
+os.environ[<span class="hljs-string">'TF_CPP_MIN_LOG_LEVEL'</span>] = <span class="hljs-string">'2'</span>
+</code></pre>
+    <table width="100%" class="table">
+        <thead>
+            <tr>
+                <th>Abschnitt</th>
+                <th>Kurzbeschreibung</th>
+                <th>Dateipfad</th>
+                <th>Hinweise</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>5.2.7</td>
+                <td>Hello World in TensorFlow</td>
+                <td><a href="chap_5/hello_world.py">chap_5/hello_world.py</a> <a
+                        href="chap_5/hello_world.ipynb">chap_5/hello_world.ipynb</a></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>5.4</td>
+                <td>Beispiele mit Tensoren</td>
+                <td><a href="chap_5/tensors_dimensions.py">chap_5/tensors_dimensions.py</a> <a
+                        href="chap_5/tensors_dimensions.ipynb">chap_5/tensors_dimensions.ipynb</a></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>5.4</td>
+                <td>Bild in Tensoren laden</td>
+                <td><a href="chap_5/loading_picture_in_tensors.py">chap_5/loading_picture_in_tensors.py</a> <a
+                        href="chap_5/loading_picture_in_tensors.ipynb">chap_5/loading_picture_in_tensors.ipynb</a></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>5.4.1</td>
+                <td>Beispiel der Verwendung von tf.Variable() und tf.assign()</td>
+                <td><a href="chap_5/variables.py">chap_5/variables.py</a> <a
+                        href="chap_5/variables.ipynb">chap_5/variables.ipynb</a></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>5.5.1</td>
+                <td>Konzept von einem Graph mit TensorFlow</td>
+                <td><a href="chap_5/simple_graph.py">chap_5/simple_graph.py</a> <a
+                        href="chap_5/simple_graph.ipynb">chap_5/simple_graph.ipynb</a></td>
+                <td></td>
+            </tr>
+            <td>5.5.4</td>
+            <td>Benutzung von AutoGraph mit @tf.function</td>
+            <td><a href="chap_5/simple_graph_with_autograph.py">chap_5/simple_graph_with_autograph.py</a> <a
+                    href="chap_5/simple_graph_with_autograph.ipynb">chap_5/simple_graph_with_autograph.ipynb</a>
+            </td>
+            <td></td>
+            </tr>
+            <tr>
+                <td>5.6</td>
+                <td>Benutzung der CPU und GPU</td>
+                <td><a href="chap_5/tensors_gpu.py">chap_5/tensors_gpu.py</a> <a
+                        href="chap_5/tensors_gpu.ipynb">chap_5/tensors_gpu.ipynb</a></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>5.7.3</td>
+                <td>Projekt: Eine lineare Regression</td>
+                <td><a href="chap_5/linear_regression_model.py">chap_5/linear_regression_model.py</a> <a
+                        href="chap_5/linear_regression_model.ipynb">chap_5/linear_regression_model.ipynb</a></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>5.8.2</td>
+                <td>Automatische Konvertierung mit tf_upgrade_v2</td>
+                <td><code>tf_upgrade_v2 --intree tf1 --outtree tf2</code></td>
+                <td></td>
+            </tr>
+        </tbody>
+    </table>
+    <h2 class="code-line" data-line-start=42 data-line-end=43><a id="Kapitel_6_Keras_42"></a>Kapitel 6: Keras</h2>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Abschnitt</th>
+                <th>Kurzbeschreibung</th>
+                <th>Dateipfad</th>
+                <th>Hinweise</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>6.1.1</td>
+                <td>Version von Keras überprüfen</td>
+                <td><a href="chap_6/keras_version_check.py">chap_6/keras_version_check.py</a> <a
+                        href="chap_6/keras_version_check.ipynb">chap_6/keras_version_check.ipynb</a></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>6.2.1</td>
+                <td>Benutzung der Sequential API</td>
+                <td><a href="chap_6/keras_xor_sequential.py">chap_6/keras_xor_sequential.py</a> <a
+                        href="chap_6/keras_xor_sequential.ipynb">chap_6/keras_xor_sequential.ipynb</a></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>6.2.2</td>
+                <td>Benutzung der Functional API</td>
+                <td><a href="chap_6/keras_xor_functional.py">chap_6/keras_xor_functional.py</a> <a
+                        href="chap_6/keras_xor_functional.ipynb">chap_6/keras_xor_functional.ipynb</a></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>6.5</td>
+                <td>Laden und speichern von Modellen</td>
+                <td><a href="chap_6/keras_load_save.py">chap_6/keras_load_save.py</a> <a
+                        href="chap_6/keras_load_save.ipynb">chap_6/keras_load_save.ipynb</a></td>
+                <td>Um die Zeile <code>tfjs.converters.save_keras_model(addition_model,
+                        &quot;./addition_model&quot;)</code> benutzen zu können, muss tfjs installiert werden, damit das
+                    Modell auch mit TensorFlow.js exportiert werden kann. </br><code>pip install tensorflowjs</code> und
+                    im
+                    Python-Code</br> <code>import tensorflowjs as tfjs</code></td>
+            </tr>
+            <tr>
+                <td>6.6</td>
+                <td>Benutzung von Keras Applications</td>
+                <td><a href="chap_6/keras_applications_list.py">chap_6/keras_applications_list.py</a> <a
+                        href="chap_6/keras_applications_list.ipynb">chap_6/keras_applications_list.ipynb</a></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>6.8</td>
+                <td>Projekt 1: Iris-Klassifikation mit Keras (ohne Evaluationsmetriken)</td>
+                <td><a href="chap_6/keras_iris_classification.py">chap_6/keras_iris_classification.py</a> <a
+                        href="chap_6/keras_iris_classification.ipynb">chap_6/keras_iris_classification.ipynb</a></td>
+                <td>Dataset: <a href="chap_6/data/iris.csv">iris.csv</a></td>
+            </tr>
+            <tr>
+                <td>6.8</td>
+                <td>Iris-Klassifikation mit Keras (mit Evaluationsmetriken)</td>
+                <td><a
+                        href="chap_6/keras_iris_classification_with_evaluation.py">chap_6/keras_iris_classification_with_evaluation.py</a>
+                    <a
+                        href="chap_6/keras_iris_classification_with_evaluation.ipynb">chap_6/keras_iris_classification_with_evaluation.ipynb</a>
+                </td>
+                <td>Dataset: <a href="chap_6/data/iris.csv">iris.csv</a></td>
+            </tr>
+            <tr>
+                <td>6.9</td>
+                <td>Projekt 2: CNNs mit Fashion-MNIST</td>
+                <td><a href="chap_6/keras_fashion_cnn.py">chap_6/keras_fashion_cnn.py</a> <a
+                        href="chap_6/keras_fashion_cnn.ipynb">chap_6/keras_fashion_cnn.ipynb</a></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>6.10</td>
+                <td>Projekt 3: Ein einfaches CNN mit dem CIFAR-10-Dataset</td>
+                <td><a href="chap_6/keras_cnn_cifar_test.py">chap_6/keras_cnn_cifar_test.py</a> <a
+                        href="chap_6/keras_cnn_cifar_test.ipynb">chap_6/keras_cnn_cifar_test.ipynb</a></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>6.11</td>
+                <td>Aktienkursvorhersage</td>
+                <td><a href="chap_6/keras_stock_prediction.py">chap_6/keras_stock_prediction.py</a></td>
+                <td>Dataset: <a href="chap_6/data/tsla.csv">tsla.csv</a></td>
+            </tr>
+        </tbody>
+    </table>
+    <h2 class="code-line" data-line-start=57 data-line-end=58><a
+            id="Kapitel_7_Netze_und_Metriken_visualisieren_57"></a>Kapitel 7: Netze und Metriken visualisieren</h2>
+            <p class="has-line-data" data-line-start="78" data-line-end="80">☝ Tipp: TensorBoard starten:</br><code>tensorboard --logdir=&quot;./logs&quot; --debugger_port=12345</code><br>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Abschnitt</th>
+                <th>Kurzbeschreibung</th>
+                <th>Dateipfad</th>
+                <th>Hinweise</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>7.1.1</td>
+                <td>Graphen visualisieren/Histogram, Distributions Dashboard</td>
+                <td><a href="chap_7/tensorboard/keras_fashion_cnn.py">chap_7/tensorboard/keras_fashion_cnn.py</a></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>7.1.4</td>
+                <td>TensorBoard: Benutzung des Text-Dashboard</td>
+                <td><a href="chap_7/tensorboard/text_summary_reuters.py">chap_7/tensorboard/text_summary_reuters.py</a>
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>7.1.4</td>
+                <td>with tf.name_scope</td>
+                <td><a href="chap_7/tensorboard/text_summary_scope.py">chap_7/tensorboard/text_summary_scope.py</a></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>7.1.5</td>
+                <td>Image Summary</td>
+                <td><a href="chap_7/tensorboard/image_summary.py">chap_7/tensorboard/image_summary.py</a></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>7.1.6</td>
+                <td>Integration TensorBoard in Jupyter</td>
+                <td><a
+                        href="chap_7/jupyter/tensorboard_integration.ipynb">chap_7/jupyter/tensorboard_integration.ipynb</a>
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>7.3.1</td>
+                <td>TF 1.x - Debugging mit TensorBoard</td>
+                <td><a href="chap_7/tensorboard/tf1/simple_net_graph.py">chap_7/tensorboard/tf1/simple_net_graph.py</a>
+                </td>
+                
+            </tr>
+
+
+
+            <tr>
+                <td>7.3.2</td>
+                <td>TF 1.x - Debugging eines CNNs</td>
+                <td><a href="chap_7/tensorboard/tf1/tensorboard/debugger_example.py">chap_7/tensorboard/tf1/tensorboard/debugger_example.py</a>
+                </td>
+                <td></td>
+<tr>
+    <td>7.3.4</td>
+    <td>TF 1.x - Debugging eines CNNs (mit Keras)</td>
+    <td><a href="chap_7/tensorboard/tf1/tensorboard/keras_debugger_example.py">chap_7/tensorboard/tf1/tensorboard/keras_debugger_example.py</a>
+    </td>
+    <td></td>
+</tr>
+
+            <tr>
+                <td>7.5.1</td>
+                <td>Keras: Benutzung von plot_model()</td>
+                <td><a href="chap_7/plot_model/plot_model_example.py">chap_7/plot_model/plot_model_example.py</a></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>7.5.2</td>
+                <td>Aktivierungen visualisieren</td>
+                <td><a href="chap_7/activations/activations_vis.py">chap_7/activations/activations_vis.py</a> <a
+                        href="chap_7/activations/activations_vis.ipynb">chap_7/activations/activations_vis.ipynb</a>
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>7.5.3</td>
+                <td>tf-explain</td>
+                <td><a href="chap_7/tf_explain%5Ctf_explain_grad_cam.py">chap_7/tf_explain/tf_explain_grad_cam.py</a>
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>7.5.4</td>
+                <td>Keras-Metriken mit Bokeh darstellen</td>
+                <td><a href="chap_7/bokeh/keras_history_bokeh.py">chap_7/bokeh/keras_history_bokeh.py</a></td>
+                <td>Installieren Sie das Python Package <em>bokeh</em></br><code>pip install bokeh</code></td>
+            </tr>
+            <tr>
+                <td>7.6</td>
+                <td>Visualisierung von CNNs mit Quiver</td>
+                <td><a href="chap_7/quiver/quiver_vgg16.py">chap_7/quiver/quiver_vgg16.py</a></td>
+                <td>Bitte legen Sie einen leeren Ordner namens <em>tmp</em> im aktuellen Verzeichnis an</td>
+            </tr>
+            <tr>
+                <td>7.7</td>
+                <td>Projekt KeiVi</td>
+                <td><a href="chap_7/keivi/">chap_7/keivi/</a></td>
+                <td>Installieren Sie die <em>node_modules</em> für das Projet mit </br><code>npm install</code></td>
+            </tr>
+            <tr>
+                <td>7.8.3</td>
+                <td>Benutzung von ConX</td>
+                <td><a href="chap_7/conx/VGG_19_with_ConX.ipynb">chap_7/conx/VGG_19_with_ConX.ipynb</a></td>
+                <td>Jupyter Notebook starten </br><code>jupyter notebook</code></td>
+            </tr>
+        </tbody>
+    </table>
+    <h2 class="code-line" data-line-start=76 data-line-end=77><a id="Kapitel_8_TensorFlowjs_76"></a>Kapitel 8:
+        TensorFlow.js</h2>
+    <p class="has-line-data" data-line-start="78" data-line-end="80">☝ Tipp: Um alle Beispiel zu testen, starten Sie
+        bitte BrowserSync vom Ordner <em>/chap8</em></br><code>browser-sync start --server --files
+            &quot;*.*&quot;</code><br>
+        Die Beispiele können dann über <a href="http://localhost:3000">http://localhost:3000</a> aufgerufen werden. Als
+        Alternative können Sie einfach die entsprechende *.html anklicken.
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Abschnitt</th>
+                    <th>Kurzbeschreibung</th>
+                    <th>Dateipfad</th>
+                    <th>Hinweise</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>8.4</td>
+                    <td>Operationen mit Tensoren</td>
+                    <td><a href="chap_8/examples.html">chap_8/examples.html</a></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>8.5</td>
+                    <td>Quadratische Regression (mit tfjs-vis)</td>
+                    <td><a href="chap_8/polynomial_regression/index.html">chap_8/polynomial_regression</a></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>8.6 (Bonus)</td>
+                    <td>XOR-Modell mit TensorFlow.js</td>
+                    <td><a href="chap_8/xor.html">chap_8/xor.html</a></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>8.7</td>
+                    <td>PoseNet-Modell</td>
+                    <td><a href="chap_8/posenet/index.html">chap_8/posenet</a></td>
+                    <td>Bitte passendes MP4-Video in den Ordner <em>./video</em> platzieren</td>
+                </tr>
+                <tr>
+                    <td>8.8</td>
+                    <td>Intelligente Smart-Home-Komponente mit TensorFlow.js und Node.js</td>
+                    <td><a href="chap_8/occupancy/">chap_8/occupancy</a></td>
+                    <td>Dataset: <a href="chap_8%5Coccupancy%5Cdata%5Cdatatraining.txt">datatraining.txt</a></td>
+                </tr>
+                <tr>
+                    <td>8.9</td>
+                    <td>Bildklassifikation mit ml5.js und MobileNet</td>
+                    <td><a href="chap_8/ml5_js/index.html">chap_8/ml5_js</a></td>
+                    <td></td>
+                </tr>
+            </tbody>
+        </table>
+        <h2 class="code-line" data-line-start=90 data-line-end=91><a id="Kapitel_9_Praxisbeispiele_90"></a>Kapitel 9:
+            Praxisbeispiele</h2>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Abschnitt</th>
+                    <th>Kurzbeschreibung</th>
+                    <th>Dateipfad</th>
+                    <th>Hinweise</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>9.1</td>
+                    <td>Projekt 1: Erkennung von Verkehrszeichen mit Keras</td>
+                    <td><a href="chap_9/1_road_signs_keras">chap_9/1_road_signs_keras</a></td>
+                    <td>Bilder müssen in den Ordner <em>./img</em> platziert werden. Installieren Sie die das
+                        Python-Package
+                        webcolors <code>pip install webcolors</code></td>
+                </tr>
+                <tr>
+                    <td>9.2</td>
+                    <td>Projekt 2: Intelligente Spurerkennung mit Keras</td>
+                    <td><a href="chap_9/2_lane_detection_keras">chap_9/2_lane_detection_keras</a></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>9.2.1</td>
+                    <td>Beispielcode zur Extraktion von einzelnen Frames mit OpenCV</td>
+                    <td><a
+                            href="chap_9/2_lane_detection_keras/extract_video_frames.py">chap_9/2_lane_detection_keras/extract_video_frames.py</a>
+                    </td>
+                    <td>Installieren Sie die das Python-Package cv2</br><code>pip install
+                            opencv-python==3.4.2.16</code></br> und
+                        falls notwendig SciPy 1.1:</br> <code>pip install scipy==1.1.0</code></td>
+                </tr>
+                <tr>
+                    <td>9.2.1</td>
+                    <td>Visualisierung der Labels für das Dataset von Michael Virgo</td>
+                    <td><a
+                            href="chap_9/2_lane_detection_keras/labels_viewer.py">chap_9/2_lane_detection_keras/labels_viewer.py</a>
+                    </td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>9.2.2</td>
+                    <td>Code für die Spurerkennung (Modell 1)</td>
+                    <td><a
+                            href="chap_9/2_lane_detection_keras/lane_detection.py">chap_9/2_lane_detection_keras/lane_detection.py</a>
+                    </td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>9.2.2</td>
+                    <td>Code für die Spurerkennung (Modell 2) - basierend auf KITTI-Road Dataset</td>
+                    <td><a
+                            href="chap_9/2_lane_detection_keras/train_kitti_road.py">chap_9/2_lane_detection_keras/train_kitti_road.py</a>
+                    </td>
+                    <td>Das Training sollte wegen längeren Berechnungszeiten auf einem Rechner mit GPU durchgeführt
+                        werden.
+                        Sollte das nicht gegeben sein, kann das trainierte Modell <a
+                            href="chap_9/2_lane_detection_keras/kitti_road_model.h5">chap_9/2_lane_detection_keras/kitti_road_model.h5</a>
+                        benutzt werden. </br></br>Im Vorfeld die Bilddateien von <a
+                            href="http://www.cvlibs.net/download.php?file=data_road.zip">http://www.cvlibs.net/download.php?file=data_road.zip</a>
+                        herunterladen und nach Entzippen diese in den Ordner <em>./data</em> platzieren.
+                        </br></br>Adaptierter Code von: <a
+                            href="https://github.com/6ixNugget/Multinet-Road-Segmentation">https://github.com/6ixNugget/Multinet-Road-Segmentation</a>.
+                        </br></br>Bitte Dimensionen des Videobreiches anpassen, damit das das Dashcam Video kein Teil des
+                            Armaturenbretts beinhaltet (siehe Zeile 42)</td> </tr> <tr>
+                    <td>9.2.2</td>
+                    <td>Visualisierung (Modell 2)</td>
+                    <td><a
+                            href="chap_9/2_lane_detection_keras/kitti_road.py">chap_9/2_lane_detection_keras/kitti_road.py</a>
+                    </td>
+                    <td>Sowohl das fertige trainierte Modell <a
+                            href="chap_9/2_lane_detection_keras/kitti_road_model.h5">chap_9/2_lane_detection_keras/kitti_road_model.h5</a>
+                        als auch die Videodatei <em>dash_cam.mp4</em> befinden sich in der ZIP-Datei von <a
+                            href="https://www.rheinwerk-verlag.de/deep-learning-mit-tensorflow-keras-und-tensorflowjs_5040/">https://www.rheinwerk-verlag.de/deep-learning-mit-tensorflow-keras-und-tensorflowjs_5040/</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>9.3</td>
+                    <td>Projekt 3: YOLO und ml5.js</td>
+                    <td><a href="chap_9/3_object_detection_yolo_tfjs">chap_9/3_object_detection_yolo_tfjs</a></td>
+                    <td>Bitte <em>index.html</em> anpassen, damit die passende MP4-Video Datei abgespielt wird</td>
+                </tr>
+                <tr>
+                    <td>9.4</td>
+                    <td>Projekt 4: VGG-19 mit Keras benutzen</td>
+                    <td><a href="chap_9/4_vgg_19_keras">chap_9/4_vgg_19_keras</a></td>
+                    <td>Platzieren Sie Ihre Bilder in den Ordner <em>./samples</em></td>
+                </tr>
+                <tr>
+                    <td>9.5</td>
+                    <td>Projekt 5: Buchstaben- und Ziffernerkennung mit dem Chars74K-Dataset</td>
+                    <td><a href="chap_9/5_chars74k">chap_9/5_chars74k</a></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>9.6</td>
+                    <td>Projekt 6: Stimmungsanalyse mit Keras</td>
+                    <td><a href="chap_9/6_sentiment_keras/sentiment.py">chap_9/6_sentiment_keras/sentiment.py</a></td>
+                    <td>Installieren Sie den TensorFlow.js Konverter:</br><code>pip install tensorflowjs</code></td>
+                </tr>
+                <tr>
+                    <td>9.7</td>
+                    <td>Projekt 7: Stimmungsanalyse mit TensorFlow.js</td>
+                    <td><a href="chap_9/7_sentiment_tfjs">chap_9/7_sentiment_tfjs/</a></td>
+                    <td>Bitte den generierten Ordner <em>/tfjs_sentiment_model</em> von 6_sentiment_keras kopieren, um
+                        das
+                        TensorFlow.js Modell benutzen zu können.</td>
+                </tr>
+                <tr>
+                    <td>9.8</td>
+                    <td>Projekt 8: Stimmungsanalyse mit TensorFlow.js</td>
+                    <td><a href="chap_9/8_tf_hub">chap_9/8_tf_hub</a></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>9.9</td>
+                    <td>Projekt 9: Hyperparameter-Tuning mit TensorBoard</td>
+                    <td><a href="chap_9/9_hparams">chap_9/9_hparams</a></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>9.10</td>
+                    <td>Projekt 10: (Nur TF1.x) Fashion-MNIST mit TensorFlow-Estimators</td>
+                    <td><a href="chap_9/10_fashion_mnist_estimators_tf1">chap_9/10_fashion_mnist_estimators_tf1</a></td>
+                    <td>Platzieren Sie Ihre Bilder in den Ordner <em>./samples</em></td>
+                </tr>
+            </tbody>
+        </table>
+        <h2 class="code-line" data-line-start=110 data-line-end=111><a id="Kapitel_10_Ausblick_110"></a>Kapitel 10:
+            Ausblick
+        </h2>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Abschnitt</th>
+                    <th >Kurzbeschreibung</th>
+                    <th>Dateipfad</th>
+                    <th>Hinweise</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>10.5.1</td>
+                    <td>AutoKeras</td>
+                    <td><a href="chap_10/auto_keras.py">chap_10/auto_keras.py</a></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>10.5.2</td>
+                    <td>Uber Ludwig</td>
+                    <td><a href="chap_10/ludwig/model.yaml">chap_10/ludwig/model.yaml</a></td>
+                    <td>Dataset: <a href="chap_10/ludwig/reuters-allcats.csv">chap_10/ludwig/reuters-allcats.csv</a>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h2 class="code-line" data-line-start=110 data-line-end=111><a id="Kapitel_10_Ausblick_110"></a>GitHub zum Buch
+        </h2>
+        <a
+            href="https://github.com/deeplearning-mit-tensorflow-keras-tfjs/2020_Zweite_Auflage">https://github.com/deeplearning-mit-tensorflow-keras-tfjs/2020_Zweite_Auflage</a>
+    </p>
+</body>
+
+</html>
