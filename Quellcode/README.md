@@ -111,5 +111,5 @@ Abschnitt | Kurzbeschreibung | Dateipfad | Hinweise
 ## Kapitel 10: Ausblick
 Abschnitt | Kurzbeschreibung | Dateipfad | Hinweise
 ------|------------------|-----------|---------
-10.5.1 |AutoKeras|[chap\_10/auto\_keras/auto\_keras.py](chap\_10/auto\_keras/auto\_keras.py)|
+10.5.1 |AutoKeras|[chap\_10/autokeras/auto\_keras.py](chap\_10/autokeras/auto\_keras.py)|
 10.5.2 |Uber Ludwig|[chap\_10/ludwig/model.yaml](chap\_10/ludwig/model.yaml)|Dataset: [chap\_10/ludwig/reuters-allcats.csv](chap\_10/ludwig/reuters-allcats.csv)
