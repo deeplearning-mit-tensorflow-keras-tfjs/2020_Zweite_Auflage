@@ -68,7 +68,7 @@ Abschnitt | Kurzbeschreibung | Dateipfad | Hinweise
 7.3.4 |TF 1.x - Debugging eines CNNs (mit Keras) | [chap\_7/tensorboard/tf1/tensorboard/keras\_debugger\_example.py](chap\_7/tensorboard/tf1/tensorboard/keras_debugger_example.py)
 7.5.1 |Keras: Benutzung von plot\_model()|[chap\_7/plot\_model/plot\_model\_example.py](chap\_7/plot\_model/plot\_model\_example.py)|
 7.5.2 |Aktivierungen visualisieren|[chap\_7/activations/activations\_vis.py](chap\_7/activations/activations\_vis.py) [chap\_7/activations/activations\_vis.ipynb](chap\_7/activations/activations\_vis.ipynb)|
-7.5.3 |tf-explain|[chap\_7/tf\_explain/tf\_explain\_grad\_cam.py](chap\_7/tf\_explain\tf\_explain\_grad\_cam.py)
+7.5.3 |tf-explain|[chap\_7/tf\_explain/tf\_explain\_grad\_cam.py](chap\_7/tf\_explain/tf\_explain\_grad\_cam.py)
 7.5.4 |Keras-Metriken mit Bokeh darstellen|[chap\_7/bokeh/keras\_history\_bokeh.py](chap\_7/bokeh/keras\_history\_bokeh.py)|Installieren Sie das Python Package *bokeh* </br> `pip install bokeh` 
 7.6 |Visualisierung von CNNs mit Quiver|[chap\_7/quiver/quiver\_vgg16.py](chap\_7/quiver/quiver\_vgg16.py)|Bitte legen Sie einen leeren Ordner namens *tmp* im aktuellen Verzeichnis an | Vergessen Sie nicht die notwendigen Anpassungen bei dem Quellcode von Quiver durchzuführen!
 7.7 |Projekt KeiVi|[chap\_7/keivi/](chap\_7/keivi/)|Installieren Sie die *node\_modules* für das Projet mit `npm install`
@@ -111,5 +111,5 @@ Abschnitt | Kurzbeschreibung | Dateipfad | Hinweise
 ## Kapitel 10: Ausblick
 Abschnitt | Kurzbeschreibung | Dateipfad | Hinweise
 ------|------------------|-----------|---------
-10.5.1 |AutoKeras|[chap\_10/auto\_keras.py](chap\_10/auto\_keras.py)|
-10.5.2 |Uber Ludwig|[chap\_10/ludwig/model.yaml](chap\_10/ludwig/model.yaml)|Dataset: [chap\_10\ludwig\reuters-allcats.csv](chap\_10\ludwig\reuters-allcats.csv)
+10.5.1 |AutoKeras|[chap\_10/auto\_keras/auto\_keras.py](chap\_10/auto\_keras\auto\_keras.py)|
+10.5.2 |Uber Ludwig|[chap\_10/ludwig/model.yaml](chap\_10/ludwig/model.yaml)|Dataset: [chap\_10/ludwig/reuters-allcats.csv](chap\_10\ludwig\reuters-allcats.csv)
