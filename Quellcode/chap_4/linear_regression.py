@@ -33,6 +33,8 @@ model = linear_model.LinearRegression()
 
 # Das Modell wird mit den Trainsdaten (800 Einträgen) trainiert ... 
 model.fit(x_train, y_train)
+print("W:", model.coef_)
+print("b:", model.intercept_)
 
 # ... und die Koeffizienten der linearen Regression ausgegeben.
 print('Coefficient: \n', model.coef_)

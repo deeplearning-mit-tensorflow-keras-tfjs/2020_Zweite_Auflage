@@ -38,7 +38,7 @@ X_train, X_test, y_train, y_test = train_test_split(data_train_array[:,:4],
 # Ein neuronales Netz zur Klassifikation (MultiLayerPerceptron) wird mit folgenden Eigenschaften gebildet:
 # einem Input-Layer mit 4 Neuronen, die die Merkmale der Iris-Planze repräsentieren;
 # einem Hidden-Layer mit 10 Neuronen
-# eime Output-Layer mit 4 Neuronen, die die zu erkennenden Klassen repräsentieren.
+# eime Output-Layer mit 3 Neuronen, die die zu erkennenden Klassen repräsentieren.
 # Dabei wird als Aktivierungsfunktion relu und als Optimierer adam verwenden.
 mlp = MLPClassifier(hidden_layer_sizes=(10,),activation='relu', solver='adam', max_iter=350, batch_size=10, verbose=True)
 
