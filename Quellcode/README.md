@@ -58,7 +58,7 @@ Abschnitt | Kurzbeschreibung | Dateipfad | Hinweise
 
 Abschnitt | Kurzbeschreibung | Dateipfad | Hinweise
 ------|------------------|-----------|---------
-7.1.1 |Graphen visualisieren/Histogram,  Distributions Dashboard|[chap\_7/tensorboard/keras_fashion_cnn.py](chap\_7/tensorboard/keras_fashion_cnn.py)|Bitte die vier im Code erwähnten Datasets (*.gz-Dateien) von https://github.com/zalandoresearch/fashion-mnist/tree/master/data/fashion herunterladen und unter data/fashion/ speichern.
+7.1.1 |Graphen visualisieren/Histogram,  Distributions Dashboard|[chap\_7/tensorboard/keras_fashion_cnn.py](chap\_7/tensorboard/keras_fashion_cnn.py)|Bitte die vier im Code erwähnten Datasets (*.gz-Dateien) von https://github.com/zalandoresearch/fashion-mnist/tree/master/data/fashion herunterladen und unter data/fashion/ speichern. <br/> *(Dank an einen aufmerksamen Leser/eine aufmerksame Leserin)*
 7.1.4 |TensorBoard: Benutzung des Text-Dashboard|[chap\_7/tensorboard/text\_summary\_reuters.py](chap\_7/tensorboard/text\_summary\_reuters.py) 
 7.1.4 |with tf.name_scope|[chap\_7/tensorboard/text\_summary\_scope.py](chap\_7/tensorboard/text\_summary\_scope.py) 
 7.1.5 |Image Summary|[chap\_7/tensorboard/image_summary.py](chap\_7/tensorboard/image_summary.py)
