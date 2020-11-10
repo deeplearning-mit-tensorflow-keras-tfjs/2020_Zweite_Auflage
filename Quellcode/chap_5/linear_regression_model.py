@@ -43,7 +43,7 @@ optimizer = tf.keras.optimizers.SGD(lr=learning_rate)
  # 1. Version
 def train(model,x,y):
     with tf.GradientTape() as tape:
-        current_loss = loss_function(model(input), output)  
+        current_loss = loss_function(model(x), y)  
     
     dW, db  = tape.gradient(current_loss, [model.W,model.b])
     model.W.assign_sub(learning_rate * dW)
@@ -53,7 +53,7 @@ def train(model,x,y):
  # 2. Version mit tape.gradient() und optimizer
 def train_with_optimizers(model,x,y):
     with tf.GradientTape() as tape:
-        current_loss = loss_function(model(input), output)  
+        current_loss = loss_function(model(x), y)  
     gradients = tape.gradient(current_loss,[model.W,model.b])
     optimizer.apply_gradients(zip(gradients , [model.W,model.b]))
     return current_loss
