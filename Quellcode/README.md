@@ -36,7 +36,7 @@ Abschnitt | Kurzbeschreibung | Dateipfad | Hinweise
 5.5.1 |Konzept von einem Graph mit TensorFlow|[chap\_5/simple_graph.py](chap\_5/simple_graph.py) [chap\_5/simple_graph.ipynb](chap\_5/simple_graph.ipynb)
 5.5.4 |Benutzung von AutoGraph mit @tf.function|[chap\_5/simple_graph_with_autograph.py](chap\_5/simple_graph_with_autograph.py) [chap\_5/simple_graph_with_autograph.ipynb](chap\_5/simple_graph_with_autograph.ipynb)
 5.6 |Benutzung der CPU und GPU| [chap\_5/tensors_gpu.py](chap\_5/tensors_gpu.py) [chap\_5/tensors_gpu.ipynb](chap\_5/tensors_gpu.ipynb)
-5.7.3 |Projekt: Eine lineare Regression| [chap\_5/linear\_regression\_model.py](chap\_5/linear\_regression\_model.py) [chap\_5/linear\_regression\_model.ipynb](chap\_5/linear\_regression\_model.ipynb)
+5.7.3 |Projekt: Eine lineare Regression| [chap\_5/linear\_regression\_model.py](chap\_5/linear\_regression\_model.py) [chap\_5/linear\_regression\_model.ipynb](chap\_5/linear\_regression\_model.ipynb)|Python-Skript korrigiert: *input* mit *x* und *output* mit y ersetzen. <br/> *(Dank an den aufmerksamen Leser Michael S.)*
 5.8.2 |Automatische Konvertierung mit tf_upgrade_v2| `tf_upgrade_v2 --intree tf1 --outtree tf2`
 
 ## Kapitel 6: Keras
