@@ -1,17 +1,10 @@
 /**
- * 
- * https://archive.ics.uci.edu/ml/datasets/Occupancy+Detection+
- * 
- * https://codelabs.developers.google.com/codelabs/tfjs-training-regression/index.html#2
- * https://www.researchgate.net/profile/Luis_Candanedo_Ibarra/publication/285627413_Accurate_occupancy_detection_of_an_office_room_from_light_temperature_humidity_and_CO2_measurements_using_statistical_learning_models/links/5b1d843ea6fdcca67b690c28/Accurate-occupancy-detection-of-an-office-room-from-light-temperature-humidity-and-CO2-measurements-using-statistical-learning-models.pdf?origin=publication_detail
+ *  Dataset/Quelle: https://archive.ics.uci.edu/ml/datasets/Occupancy+Detection+
+ *  Publikation: https://www.researchgate.net/profile/Luis_Candanedo_Ibarra/publication/285627413_Accurate_occupancy_detection_of_an_office_room_from_light_temperature_humidity_and_CO2_measurements_using_statistical_learning_models/links/5b1d843ea6fdcca67b690c28/Accurate-occupancy-detection-of-an-office-room-from-light-temperature-humidity-and-CO2-measurements-using-statistical-learning-models.pdf?origin=publication_detail
  
-
-    /* Hier muss browsersync gestartet werden 
-    https://livebook.manning.com/book/deep-learning-with-javascript/chapter-7/v-8/87
+ /* Hier muss browsersync gestartet werden damit die Datei korrekt geladen wird
     http://localhost:3000/data/datatraining.csv
-    */
-
-// Occupancy
+ */
 
 const tf = require("@tensorflow/tfjs");
 require('@tensorflow/tfjs-node')
@@ -60,8 +53,6 @@ function filterColumns(input) {
     }
 }
 
-
-/**  */
 async function preprocess_data(csvDataset) {
 
     var minMax = [];
