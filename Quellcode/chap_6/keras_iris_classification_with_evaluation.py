@@ -59,7 +59,7 @@ test_data = np.array([[5.1,3.5,1.4,0.2], [5.9,3.,5.1,1.8], [4.9,3.,1.4,0.2], [5.
 predictions = iris_model.predict(test_data)
 index_max_predictions = np.argmax(predictions,axis=1)
 
-for i in index_max_predictions:
+for index, e in enumerate(index_max_predictions):
     print("Iris mit den Eigenschaften {} gehört zur Klasse: {}".format(
-    test_data[i],
-    iris_label_array[i]))
+    test_data[index],
+    iris_label_array[e]))
