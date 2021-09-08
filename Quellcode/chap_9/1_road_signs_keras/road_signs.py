@@ -1,6 +1,6 @@
 #
 # Projekt 1: Verkehrszeichenerkennung mit Keras
-#
+# Variante 1: Ohne Datenaugmentierung
 
 import os
 import matplotlib

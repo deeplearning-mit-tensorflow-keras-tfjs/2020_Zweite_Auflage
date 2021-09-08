@@ -1,5 +1,6 @@
 #
 # Projekt 1: Verkehrszeichenerkennung mit Keras
+# Variante 2 mit Datenaugmentierung
 #
 
 import os
@@ -148,7 +149,7 @@ optimizer = Adam(lr=0.001)
 model = build_model()
 
 # Da wir ein Klassifikationsaufgabe haben, verwenden wir categorical_crossentropy
-model.compile(loss='categorical_crossentropy', optimizer=optimizer, metrics = ["accuracy"])#,"mae"])
+model.compile(loss='categorical_crossentropy', optimizer=optimizer, metrics = ["accuracy"])
 
 # Imagegenerator für die Trainingsdaten
 train_imagedatagenerator = ImageDataGenerator(
@@ -175,10 +176,10 @@ val_imagedatagenerator = ImageDataGenerator(
 val_imagedatagenerator.fit(valImages)
 
 # Option 1: Training des Modells Ohne Datenaugmentierung
-model.fit(trainImages,trainLabels, epochs=NUM_EPOCHS, batch_size=NUM_BATCHES,verbose=1,validation_data=(valImages,valLabels),shuffle=True)
+# model.fit(trainImages,trainLabels, epochs=NUM_EPOCHS, batch_size=NUM_BATCHES,verbose=1,validation_data=(valImages,valLabels),shuffle=True)
 
 # Option 2: Training des Modells mit Datenaugmentierung
-# model.fit_generator(train_imagedatagenerator.flow(trainImages, trainLabels, batch_size=NUM_BATCHES), steps_per_epoch= trainImages.shape[0]/NUM_BATCHES, epochs=NUM_EPOCHS,validation_data=(valImages,valLabels),verbose=1)
+model.fit_generator(train_imagedatagenerator.flow(trainImages, trainLabels, batch_size=NUM_BATCHES), steps_per_epoch= trainImages.shape[0]/NUM_BATCHES, epochs=NUM_EPOCHS,validation_data=(valImages,valLabels),verbose=1)
 
 # Wir laden nun das Testdataset
 test_images, test_labels = load_roadsigns_data(TEST_IMAGES_PATH)
@@ -186,6 +187,7 @@ test_images, test_labels  = shuffle(test_images,test_labels,random_state=42)
 
 scores = model.evaluate(test_images,test_labels,verbose=1)
 
+# Variante 1 / 2
 #scores = model.evaluate(val_imagedatagenerator.flow(valImages,valLabels),verbose=1)
 #scores = model.evaluate(valImages,valLabels,verbose=1)
 
