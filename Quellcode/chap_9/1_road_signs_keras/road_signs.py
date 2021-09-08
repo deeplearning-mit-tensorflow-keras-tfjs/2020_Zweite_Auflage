@@ -62,7 +62,7 @@ def load_roadsigns_data(rootpath):
     
     #  Hinweis: unter MacOS wird der versteckte Ordner
     # ".DS_STORE" mitgezählt
-    num_roadsign_classes = len([pic for pic in os.listdir("./img/train") if not pic.startswith(".")])
+    num_roadsign_classes = len([pic for pic in os.listdir(rootpath) if not pic.startswith(".")])
 
     # Die Schleife geht über alle Verzeichnisse
     for c in range(0,num_roadsign_classes):
