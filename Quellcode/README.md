@@ -12,7 +12,7 @@ Abschnitt | Kurzbeschreibung | Dateipfad | Hinweise
 
 Abschnitt | Kurzbeschreibung | Dateipfad | Hinweise
 ------|------------------|-----------|---------
-4.5.1 |Beispiele von Funktionalitäten von NumPy | [chap\_4/numpy\_examples.py](chap\_4/numpy\_examples.py) [chap\_4/numpy\_examples.ipynb](chap\_4/numpy\_examples.ipynb)| Installieren Sie die zwei Python-Packages </br> `pip install tabulate wget`. 
+4.5.1 |Beispiele von Funktionalitäten von NumPy | [chap\_4/numpy\_examples.py](chap\_4/numpy\_examples.py) [chap\_4/numpy\_examples.ipynb](chap\_4/numpy\_examples.ipynb)| Installieren Sie die zwei Python-Packages </br> `pip install tabulate wget`. <br/>Falls dies nicht gelingen sollte, können Sie auch gerne folgendes verwenden: `conda install -n geo conda-forge::python-wget`  <br/> *(Dank an einen aufmerksamen Leser/eine aufmerksame Leserin!)*
 4.6.4 |Visualisierung vom Olivetti-Dataset|[chap\_4/olivetti\_dataset.py](chap\_4/olivetti\_dataset.py) [chap\_4/olivetti\_dataset.ipynb](chap\_4/olivetti\_dataset.ipynb) 
 4.6.5 |Normalisierung von Daten mit scikit-learn|[chap\_4/normalize\_iris\_dataset.py](chap\_4/normalize\_iris\_dataset.py) [chap\_4/normalize\_iris\_dataset.ipynb](chap\_4/normalize\_iris\_dataset.ipynb)
 4.6.6 |Benutzung von Seed |[chap\_4/seed_example.py](chap\_4/seed_example.py) [chap\_4/seed_example.ipynb](chap\_4/seed_example.ipynb)
