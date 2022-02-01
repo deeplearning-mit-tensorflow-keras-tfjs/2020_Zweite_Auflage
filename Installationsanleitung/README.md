@@ -27,7 +27,6 @@ Um alle Beispiele der ersten Kapitel des Buches zu bearbeiten, empfehlen wir Ihn
 
 Ein Vorteil von conda ist es, dass beim Installieren eines Pakets nicht nur dieses sondern auch alle vom ihm benötigten Pakete mitinstalliert werden.
 
-
 Wenn Sie die Liste alle definierten Umgebungen bekommen möchten, können Sie folgendes Kommando ausführen:<br>
 ```conda env list```
 
@@ -39,4 +38,15 @@ Jedesmal, wenn Sie mit dem Buch arbeiten möchten, empfiehlt es sich zum Ihrer A
 Nach Beendigung Ihrer Arbeiten sollten Sie die <i>dl_env</i> Umgebung deaktivieren:<br>
 ```source deactivate dl_env```
 
+### NB: Python-Installation auf M1
+Sollten Sei einen M1 Prozessor einsetzen, verweisen wir für die Installtion auf folgende Seiten:<br>
+https://betterdatascience.com/install-tensorflow-2-7-on-macbook-pro-m1-pro/<br>
+https://www.examplefiles.net/cs/620349<br>
+https://towardsdatascience.com/accelerated-tensorflow-model-training-on-intel-mac-gpus-aa6ee691f894<br>
+https://naturale0.github.io/2021/01/29/setting-up-m1-mac-for-both-tensorflow-and-pytorch<br>
 
+Im wesentlichen können Sie wie folgt vorgehen:
+```conda install nomkl bzw. pip install nomkl```<br>
+```conda install -c apple tensorflow-deps -y```<br>
+```python -m pip install tensorflow-macos```<br>
+```pip install tensorflow-metal```
