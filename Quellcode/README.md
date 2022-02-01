@@ -52,8 +52,7 @@ Abschnitt | Kurzbeschreibung | Dateipfad | Hinweise
 6.8 |Iris-Klassifikation mit Keras (mit Evaluationsmetriken)|[chap\_6/keras\_iris\_classification\_with\_evaluation.py](chap\_6/keras\_iris\_classification\_with\_evaluation.py) [chap\_6/keras\_iris\_classification\_with\_evaluation.ipynb](chap\_6/keras\_iris\_classification\_with\_evaluation.ipynb)|Dataset: [iris.csv](chap\_6/data/iris.csv) <br> Python-Skript korrigiert: Ausgabereihenfolge angepasst.<br> *(Dank an den aufmerksamen Leser Elias!)*
 6.9 |Projekt 2: CNNs mit Fashion-MNIST|[chap\_6/keras\_fashion\_cnn.py](chap\_6/keras\_fashion\_cnn.py) [chap\_6/keras\_fashion\_cnn.ipynb](chap\_6/keras\_fashion\_cnn.ipynb) |
 6.10 |Projekt 3: Ein einfaches CNN mit dem CIFAR-10-Dataset|[chap\_6/keras\_cnn\_cifar\_test.py](chap\_6/keras\_cnn\_cifar\_test.py) [chap\_6/keras\_cnn\_cifar\_test.ipynb](chap\_6/keras\_cnn\_cifar\_test.ipynb)
-6.11 |Aktienkursvorhersage|[chap\_6/keras\_stock\_prediction.py](chap\_6/keras\_stock\_prediction.py)|Dataset: [tsla.csv](chap\_6/data/tsla.csv)
-
+6.11 |Aktienkursvorhersage|[chap\_6/keras\_stock\_prediction.py](chap\_6/keras\_stock\_prediction.py)|Dataset: [tsla.csv](chap\_6/data/tsla.csv)<br> Sollten Sie folgende Fehlermeldung bekommen, dann haben Sie wahrscheinlich eine mit Ihrer Tensorflow-version nicht kompatible numpy-Version: <br>`Cannot convert a symbolic Tensor (lstm/strided_slice:0) to a numpy array. This error may indicate that you're trying to pass a Tensor to a NumPy call, which is not supported`. <br> In diesem Fall können Sie entweder auf die Numpy-version 19.1 downgraden oder auf die Tensorflow-Version upgraden (>= 2.6).<br> cf. https://github.com/tensorflow/models/issues/9706 <br> *(Dank an den aufmerksamen Leser/Leserin S.!)*
 ## Kapitel 7: Netze und Metriken visualisieren
 
 Abschnitt | Kurzbeschreibung | Dateipfad | Hinweise
