@@ -45,7 +45,7 @@ https://www.examplefiles.net/cs/620349<br>
 https://towardsdatascience.com/accelerated-tensorflow-model-training-on-intel-mac-gpus-aa6ee691f894<br>
 https://naturale0.github.io/2021/01/29/setting-up-m1-mac-for-both-tensorflow-and-pytorch<br>
 
-Im wesentlichen können Sie wie folgt vorgehen:
+Im wesentlichen können Sie wie folgt vorgehen:<br>
 ```conda install nomkl bzw. pip install nomkl```<br>
 ```conda install -c apple tensorflow-deps -y```<br>
 ```python -m pip install tensorflow-macos```<br>
