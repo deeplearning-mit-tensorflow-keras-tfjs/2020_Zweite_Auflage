@@ -3,7 +3,7 @@ try:
     import tensorflow as tf
     from tensorflow import keras
     print("Keras TensorFlow version: {}".format(keras.__version__))
-except:
+except ModuleNotFoundError:
     print("Keras TensorFlow Version nicht installiert")
 
 # Wenn Sie zusätzlich Keras über keras.io installiert haben, werden Sie
@@ -14,5 +14,5 @@ except:
 try:
     import keras
     print("Keras version: {}".format(keras.__version__))
-except: 
+except ModuleNotFoundError: 
     print("Keras Version von keras.io nicht installiert")
